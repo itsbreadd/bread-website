@@ -1,0 +1,11 @@
+#particle-overlay {
+    background-color: #2e2e2e;
+    background-image: url(../img/black-felt.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: repeat;
+}
+
+#particle-overlay canvas {
+    position: absolute;
+}

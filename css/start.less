@@ -32,6 +32,7 @@ body {
 	box-shadow: rgb(0 0 0 / 40%) 0px 0px 40px 5px inset;
 	z-index: 10;
 	pointer-events: none;
+	max-width: 500px;
 }
 
 #profile-image-container {
@@ -42,24 +43,34 @@ body {
 }
 
 #profile-name-container {
-	height: 10%;
+	flex-direction: column;
+	height: 15%;
 	align-items: center;
 	justify-content: center;
+}
+
+#profile-name-container h1 {
 	font-size: 1.5em;
+}
+
+#profile-job-title-container {
+	height: 5%;
+	align-items: center;
+	justify-content: center;
 }
 
 #profile-info-container {
 	height: 10%;
 	align-items: center;
 	justify-content: center;
-	font-size: 1.2em;
+	font-size: 0.8em;
 }
 
 #profile-social-links {
 	height: 10%;
 	align-items: center;
 	justify-content: space-between;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	pointer-events: all;
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
@@ -71,6 +82,26 @@ body {
 	a:hover {
 		transform: scale(1.5);
 	}
+}
+
+.tooltip {
+	color: black;
+	width: 80px;
+	font-size: 0.6em;
+	padding: 5px;
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 5px;
+	transform: translate(0px, -38px);
+}
+
+.tooltip:after {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 28px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid rgba(255, 255, 255, 0.9);
 }
 
 

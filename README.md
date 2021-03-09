@@ -2,7 +2,10 @@
 Personal website
 
 # to do
-- Add job title underneath name
+- Add fadein-out to tooltips
 - Add copyright at the bottom of container
 - Add download CV button
 - Add Enter Site button
+
+# possibly
+- Add light/dark mode button in top corner of screen

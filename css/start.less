@@ -1,0 +1,79 @@
+:root {
+  --font: 'loves';
+}
+
+@font-face {
+    font-family: 'loves';
+    src: url('../fonts/loves.ttf');
+}
+
+body {
+	font-family: var(--font);
+}
+
+#particle-overlay {
+    background-color: #2e2e2e;
+    background-image: url(../img/black-felt.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: repeat;
+}
+
+#particle-overlay canvas {
+    position: absolute;
+}
+
+#profile-container {
+	background-image: url(../img/black-felt.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: repeat;
+	background-color: #1c1c1c;
+	box-shadow: rgb(0 0 0 / 40%) 0px 0px 40px 5px inset;
+	z-index: 10;
+	pointer-events: none;
+}
+
+#profile-image-container {
+	height: 40%;
+}
+
+#profile-image {
+}
+
+#profile-name-container {
+	height: 10%;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5em;
+}
+
+#profile-info-container {
+	height: 10%;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.2em;
+}
+
+#profile-social-links {
+	height: 10%;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 1.5em;
+	pointer-events: all;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+
+	a {
+		transition: all 0.2s ease-in-out;
+	}
+
+	a:hover {
+		transform: scale(1.5);
+	}
+}
+
+
+
+
+

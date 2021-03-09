@@ -4,13 +4,32 @@
 	<?php include 'php/header.html'; ?>
     <body class="w-full h-full text-white">
 		<div id="particle-overlay" class="w-full h-full flex">
-			<div class="bg-white w-1/2 h-4/5 m-auto rounded-lg">
-
+			<div id="profile-container" class="w-1/2 h-4/5 m-auto rounded-lg p-5">
+				<div id="profile-image-container" class="bg-white w-full h-full">
+					<img id="profile-image" class="h-full mx-auto rounded-full" src="img/brad.png" alt="Picture of me">
+				</div>
+				<div id="profile-name-container" class="flex font-extrabold bg-red-200 w-full">
+					<h1>Bradley Archer</h1>
+				</div>
+				<div id="profile-info-container" class="flex font-extrabold bg-blue-200 w-full">
+					<div id="profile-info-text">Welcome</div>
+				</div>
+				<div id="profile-social-links" class="flex w-full bg-purple-200 pl-5 pr-5">
+                    <a href="https://www.facebook.com/bread.archer" target="_blank" class="fa fa-facebook" alt="facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></a>
+                    <a href="https://www.twitter.com/iarcherz" target="_blank" class="fa fa-twitter" alt="twitter" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"></a>
+                    <a href="mailto:bradarcher15@gmail.com?Subject=Website%20Enquiry" target="_blank" class="fa fa-envelope" alt="email" data-toggle="tooltip" data-placement="top" title="Email"></a>
+                    <a href="https://www.instagram.com/bread_archer" target="_blank" class="fa fa-instagram" alt="instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/bradarch/" target="_blank" class="fa fa-linkedin" alt="linkedin" data-toggle="tooltip" data-placement="top" title="LinkedIn"></a>
+                    <a href="https://www.youtube.com/user/iArcheRz" target="_blank" class="fa fa-youtube" alt="youtube" data-toggle="tooltip" data-placement="top" title="YouTube"></a>
+				</div>
     		</div>
 		</div>
 
 		<!-- Particle JS Scripts -->
 		<script src="js/particleJs/particles.js"></script>
 		<script src="js/particleJs/app.js"></script>
+
+		<!-- Profile Info Wheel JS -->
+		<script src="js/profile-info-wheel.js"></script>
     </body>
 </html>

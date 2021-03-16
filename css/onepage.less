@@ -1,0 +1,64 @@
+:root {
+  --font: 'loves';
+}
+
+@font-face {
+    font-family: 'loves';
+    src: url('../fonts/loves.ttf');
+}
+
+body {
+	font-family: var(--font);
+	background-color: #2e2e2e;
+    background-image: url(../img/black-felt.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: repeat;
+}
+
+header {
+	background-color: black;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 1.25em;
+}
+
+#experience-burger-menu {
+	position: absolute;
+	left: 15px;
+	font-size: 1.25em;
+	cursor: pointer;
+}
+
+#navigation-menu {
+	background-color: grey;
+	display: none;
+
+	ul > li > a{
+		display: block;
+		padding: 10px;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+/*animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;*/
+
+/*@keyframes bounce {
+	0%, 100% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	50% {
+		-webkit-transform: translateY(-3px);
+		-ms-transform:     translateY(-3px);
+		transform:         translateY(-3px)
+	}
+}*/

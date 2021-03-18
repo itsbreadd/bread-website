@@ -4,7 +4,10 @@
 	<?php include 'php/header.html'; ?>
     <body class="w-full h-full text-white">
     	<header class="w-full flex">
-    		<i id="experience-burger-menu" class="fa fa-bars"></i>
+            <div id="menu-toggle">
+                <i id="experience-menu-open" class="fa fa-bars"></i>
+                <i id="experience-menu-close" class="fa fa-times"></i>
+            </div>
     		<h1>Bradley Archer</h1>
     	</header>
 

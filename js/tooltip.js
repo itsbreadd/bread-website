@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	let socialLinks = $('#profile-social-links a');
+	let socialLinks = $('.social-links a');
 
 	socialLinks.hover(function() {
 		let centerX = $(this).offset().left + $(this).width() / 2;

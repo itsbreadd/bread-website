@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html class="w-full h-full">
 	<?php include 'php/header.html'; ?>
     <body class="w-full h-full text-white">
@@ -9,6 +8,10 @@
                 <i id="experience-menu-close" class="fa fa-times"></i>
             </div>
     		<a href="/"><h1>Bradley Archer</h1></a>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
     	</header>
 
     	<div id="navigation-menu" class="text-center" data-dropped="false">
@@ -46,5 +49,6 @@
 
         <script src="js/tooltip.js"></script>
     	<script src="js/navigation-menu.js"></script>
+        <script src="js/light-dark-mode.js"></script>
     </body>
 </html>

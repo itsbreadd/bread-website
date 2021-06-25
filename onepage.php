@@ -23,12 +23,39 @@
     		</ul>
     	</div>
 
-        <section class="intro w-full">
+        <section class="w-full">
             <div class="section-container">
                 <div class="w-1/2">
-                    <h1 class="uppercase mb-2">Introduction</h1>
+                    <h1 class="uppercase mb-2">Bio</h1>
                 </div>
                 <p>My name is Bradley Archer and im currently a junior web developer.</p>
+            </div>
+        </section>
+        <section class="w-full">
+            <div class="section-container">
+                <div class="w-1/2">
+                    <h1 class="uppercase mb-2">Current Role</h1>
+                </div>
+                <p>Paul Smith</p>
+            </div>
+        </section>
+        <section class="w-full">
+            <div class="section-container">
+                <div class="w-1/2">
+                    <h1 class="uppercase mb-2">University</h1>
+                </div>
+                <p>Demontfort Universtity</p>
+            </div>
+        </section>
+        <section class="w-full">
+            <div class="section-container">
+                <div class="w-1/2">
+                    <h1 class="uppercase mb-2">Experience</h1>
+                </div>
+                <p>Magento</p>
+                <p>PHP</p>
+                <p>MySql</p>
+                <p>Javascript</p>
             </div>
         </section>
 

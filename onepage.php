@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="w-full h-full">
 	<?php include 'php/header.html'; ?>
-    <body class="w-full h-full text-white">
+    <body class="w-full h-full text-black">
     	<header class="w-full flex">
             <div id="menu-toggle">
                 <i id="experience-menu-open" class="fa fa-bars"></i>
@@ -16,17 +16,17 @@
 
     	<div id="navigation-menu" class="text-center" data-dropped="false">
     		<ul>
-    			<li><a href="#">Introduction</a></li>
-    			<li><a href="#">Experience</a></li>
-    			<li><a href="#">Interests</a></li>
-    			<li><a href="#">Contact</a></li>
+    			<li><a class="menu-link" href="#">Introduction</a></li>
+    			<li><a class="menu-link" href="#">Experience</a></li>
+    			<li><a class="menu-link" href="#">Interests</a></li>
+    			<li><a class="menu-link" href="#">Contact</a></li>
     		</ul>
     	</div>
 
         <section class="w-full">
             <div class="section-container">
                 <div class="w-1/2">
-                    <h1 class="uppercase mb-2">Bio</h1>
+                    <h1 class="mb-2">Bio</h1>
                 </div>
                 <p>My name is Bradley Archer and im currently a junior web developer.</p>
             </div>
@@ -34,7 +34,7 @@
         <section class="w-full">
             <div class="section-container">
                 <div class="w-1/2">
-                    <h1 class="uppercase mb-2">Current Role</h1>
+                    <h1 class="mb-2">Current Role</h1>
                 </div>
                 <p>Paul Smith</p>
             </div>
@@ -42,7 +42,7 @@
         <section class="w-full">
             <div class="section-container">
                 <div class="w-1/2">
-                    <h1 class="uppercase mb-2">University</h1>
+                    <h1 class="mb-2">University</h1>
                 </div>
                 <p>Demontfort Universtity</p>
             </div>
@@ -50,12 +50,24 @@
         <section class="w-full">
             <div class="section-container">
                 <div class="w-1/2">
-                    <h1 class="uppercase mb-2">Experience</h1>
+                    <h1 class="mb-2">Experience</h1>
                 </div>
                 <p>Magento</p>
                 <p>PHP</p>
                 <p>MySql</p>
                 <p>Javascript</p>
+            </div>
+        </section>
+        <section class="w-full">
+            <div class="section-container">
+                <div class="w-1/2">
+                    <h1 class="mb-2">Lanuages & Skills</h1>
+                </div>
+                <img class="skills-image" src="img/magento.png" alt="magento">
+                <img class="skills-image" src="img/php.png" alt="php">
+                <img class="skills-image" src="img/mysql.png" alt="mysql">
+                <img class="skills-image" src="img/javascript.png" alt="javascript">
+                <img class="skills-image" src="img/css.png" alt="css">
             </div>
         </section>
 

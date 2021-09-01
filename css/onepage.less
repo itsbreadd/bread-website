@@ -1,43 +1,40 @@
 :root {
-  --font: 'loves';
+  --font: 'Courier New';
+  --font-bold: 'Courier'
 }
 
 @font-face {
-    font-family: 'loves';
-    src: url('../fonts/loves.ttf');
+  font-family: 'Courier New';
+  font-family: 'Courier';
 }
 
 body {
-	background-color: #2e2e2e;
-    background-image: url(../img/black-felt.png);
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: repeat;
+	font-family: var(--font);
+	background-color: white;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: repeat;
 }
 
 header {
-	background-color: #1c1c1c;
+	background-color: #F4F4F4;
 	height: 50px;
 	align-items: center;
 	justify-content: center;
-
-	h1 {
-		font-family: var(--font);
-	}
 }
 
 footer {
-	background-color: #1c1c1c;
+	background-color: #F4F4F4;
 	height: 100px;
 }
 
 h1 {
-	font-size: 1.25em;
+	font-family: var(--font-bold);
+	font-size: 1.5em;
 }
 
 section {
 	padding: 15px 15px 0px 15px;
-	font-family: 'Trebuchet MS', sans-serif;
 
 	&:last-of-type {
     padding-bottom: 15px;
@@ -67,7 +64,7 @@ section {
 }
 
 #navigation-menu {
-	background-color: #9589a5;
+	background-color: #F4F4F4;
 	display: none;
 
 	ul > li > a{
@@ -97,8 +94,7 @@ section {
 
 .section-container {
 	padding: 15px;
-	margin-right: 20%;
-	background-color: #1c1c1c;
+	background-color: #F4F4F4;
 
 	h1 {
 		background-image: linear-gradient(#2196f3, #2196f3);
@@ -166,6 +162,10 @@ input:checked + .slider:before {
   filter: invert(100%);
 }
 
+.skills-image {
+	width: 100px;
+}
+
 .social-links {
 	height: 70px;
 	align-items: center;
@@ -182,12 +182,11 @@ input:checked + .slider:before {
 }
 
 .tooltip {
-	font-family: var(--font);
-	color: black;
+	color: white;
 	width: 80px;
 	font-size: 0.6em;
 	padding: 5px;
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.9);
 	border-radius: 5px;
 	transform: translate(0px, -38px);
 }
@@ -203,7 +202,6 @@ input:checked + .slider:before {
 }
 
 .copyright {
-	font-family: var(--font);
 	height: 30px;
 	font-size: 0.7em;
 	justify-content: center;

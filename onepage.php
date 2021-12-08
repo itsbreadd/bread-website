@@ -72,16 +72,18 @@
         </section>
 
         <footer class="w-full">
-            <div class="social-links flex w-full pl-8 pr-8">
-                <a href="https://www.facebook.com/bread.archer" target="_blank" class="fa fa-facebook" alt="facebook" title="Facebook"></a>
-                <a href="https://www.twitter.com/iarcherz" target="_blank" class="fa fa-twitter" alt="twitter" title="Twitter"></a>
-                <a href="mailto:bradarcher15@gmail.com?Subject=Website%20Enquiry" target="_blank" class="fa fa-envelope" alt="email" title="Email"></a>
-                <a href="https://www.instagram.com/bread_archer" target="_blank" class="fa fa-instagram" alt="instagram" title="Instagram"></a>
-                <a href="https://github.com/itsbreadd" target="_blank" class="fa fa-github" alt="github" title="Github"></a>
-                <a href="https://www.linkedin.com/in/bradarch/" target="_blank" class="fa fa-linkedin" alt="linkedin" title="LinkedIn"></a>
-                <a href="https://www.youtube.com/user/iArcheRz" target="_blank" class="fa fa-youtube" alt="youtube" title="YouTube"></a>
+            <div class="flex justify-center">
+                <div class="social-links flex w-full p-8">
+                    <a href="https://www.facebook.com/bread.archer" target="_blank" class="fa fa-facebook" alt="facebook" title="Facebook"></a>
+                    <a href="https://www.twitter.com/iarcherz" target="_blank" class="fa fa-twitter" alt="twitter" title="Twitter"></a>
+                    <a href="mailto:bradarcher15@gmail.com?Subject=Website%20Enquiry" target="_blank" class="fa fa-envelope" alt="email" title="Email"></a>
+                    <a href="https://www.instagram.com/bread_archer" target="_blank" class="fa fa-instagram" alt="instagram" title="Instagram"></a>
+                    <a href="https://github.com/itsbreadd" target="_blank" class="fa fa-github" alt="github" title="Github"></a>
+                    <a href="https://www.linkedin.com/in/bradarch/" target="_blank" class="fa fa-linkedin" alt="linkedin" title="LinkedIn"></a>
+                    <a href="https://www.youtube.com/user/iArcheRz" target="_blank" class="fa fa-youtube" alt="youtube" title="YouTube"></a>
+                </div>
             </div>
-            <div class="copyright flex">
+            <div class="copyright flex pb-2">
                 <p class="copyright-text">Ⓒ Bradley Archer</p>
             </div>
         </footer>

@@ -1,9 +1,9 @@
 $(document).ready(function() {
 	let i = 0,
-		textPlaceholder = $('#profile-info-text'),
+		textPlaceholder = $('.profile-info-text'),
 		textReel = [
-			'Please checkout my social links',
-			'Graduate of Demontfort University',
+			'Check out my social links!',
+			'Demontfort Graduate',
 			'Click "Enter Site" to find out more'
 		];
 

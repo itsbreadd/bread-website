@@ -5,7 +5,7 @@
     "tailwindcss": "^3.0.1"
   },
   "scripts": {
-    "build-start-css": "postcss src/css/start.css -o css/start-cm.css",
+    "build-start-css": "postcss src/css/start.css -o css/start-cm.css --watch",
     "build-onepage-css": "postcss src/css/onepage.css -o css/onepage-cm.css"
   }
 }

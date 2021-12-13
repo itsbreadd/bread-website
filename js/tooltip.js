@@ -4,7 +4,7 @@ $(document).ready(function() {
 	socialLinks.hover(function() {
 		let centerX = $(this).offset().left + $(this).width() / 2;
 
-		$('<div class="absolute text-center tooltip">' + this.title + '</div>').insertBefore(this)
+		$('<div class="tooltip">' + this.title + '</div>').insertBefore(this)
 			.css({
 				"left": centerX - 40
 			});

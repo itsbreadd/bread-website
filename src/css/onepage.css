@@ -22,56 +22,46 @@ body {
 
 header {
 	background-color: #F4F4F4;
-	height: 50px;
-	align-items: center;
-	justify-content: center;
 }
 
 footer {
 	background-color: #F4F4F4;
 }
 
-h1 {
-	font-family: var(--font-bold);
-	font-size: 1.5em;
-}
-
-section {
-	padding: 15px 15px 0px 15px;
-}
-
-section:last-of-type {
-	padding-bottom: 15px;
-}
-
-#menu-toggle {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	font-size: 1.25em;
+.menu-toggle {
 	cursor: pointer;
-	padding: 20px;
-	width: 50px;
-	height: 50px;
+	width: 60px;
 }
 
-#experience-menu-open, #experience-menu-close {
+.experience-menu-open, .experience-menu-close {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
-#experience-menu-close {
+.experience-menu-close.fa {
 	display: none;
 }
 
-#navigation-menu {
+.bounce {
+  animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+    20% { transform:translateY(0%); }
+    50% { transform:translateY(-10%); }
+    70% { transform:translateY(0%); }
+    75% { transform:translateY(-5%); }
+    100% { transform:translateY(0); }
+}
+
+.navigation-menu {
 	background-color: #F4F4F4;
 	display: none;
 }
 
-#navigation-menu > ul > li > a {
+.navigation-menu > ul > li > a {
 	display: block;
 	padding: 10px;
 	width: 100%;
@@ -95,8 +85,7 @@ section:last-of-type {
 	}
 }*/
 
-.section-container {
-	padding: 15px;
+section {
 	background-color: #F4F4F4;
 }
 
@@ -106,16 +95,10 @@ section:last-of-type {
   background-repeat: no-repeat;
 }
 
-.heading-container {
-	width: 50%;
-}
-
 .switch {
-	position: absolute;
 	display: inline-block;
 	width: 30px;
 	height: 17px;
-	right: 15px;
 }
 
 .switch input {
@@ -125,13 +108,8 @@ section:last-of-type {
 }
 
 .slider {
-	position: absolute;
 	cursor: pointer;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: #ccc;
+	background-color: #CCC;
 	transition: .4s;
 	border-radius: 34px;
 }
@@ -170,8 +148,6 @@ input:checked + .slider:before {
 }
 
 .social-links {
-	align-items: center;
-	justify-content: space-between;
 	font-size: 1.25em;
 	max-width: 500px;
 }
@@ -194,10 +170,4 @@ input:checked + .slider:before {
 	background-color: rgba(0, 0, 0, 0.9);
 	border-radius: 5px;
 	transform: translate(0px, -38px);
-}
-
-.copyright {
-	font-size: 0.7em;
-	justify-content: center;
-	align-items: center;
 }

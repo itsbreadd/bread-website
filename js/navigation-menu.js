@@ -1,8 +1,8 @@
 $(document).ready(function() {
-	let menuOpen     = $('#experience-menu-open'),
-		menuClose    = $('#experience-menu-close'),
-		menuToggle   = $('#menu-toggle'),
-		navContainer = $('#navigation-menu');
+	let menuOpen     = $('.experience-menu-open'),
+		menuClose    = $('.experience-menu-close'),
+		menuToggle   = $('.menu-toggle'),
+		navContainer = $('.navigation-menu');
 
 	/* Hide/ Show Menu */
 	menuToggle.click(function () {
@@ -10,7 +10,7 @@ $(document).ready(function() {
 			navContainer.attr('data-dropped', 'true');
 			menuOpen.fadeOut();
 			menuClose.fadeIn();
-			navContainer.slideDown();
+			navContainer.fadeIn();
 			return;
 		}
 		closeNav();
@@ -26,7 +26,7 @@ $(document).ready(function() {
 	/* Close Menu On Click Outside*/
 	$(document).click(function(e) { 
 	  if(navContainer.attr('data-dropped') === 'true' &&
-	  	!$(e.target).closest('#navigation-menu').length &&
+	  	!$(e.target).closest('.navigation-menu').length &&
 	  	!$(e.target).closest('header').length) {
 	  	closeNav();
 	  }        
@@ -37,6 +37,6 @@ $(document).ready(function() {
 		navContainer.attr('data-dropped', 'false');
 		menuOpen.fadeIn();
 		menuClose.fadeOut();
-		navContainer.slideUp();
+		navContainer.fadeOut();
 	};
 });

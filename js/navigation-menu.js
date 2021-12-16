@@ -1,18 +1,15 @@
 $(document).ready(function() {
-	let menuOpen     = $('.experience-menu-open'),
-		menuClose    = $('.experience-menu-close'),
-		menuToggle   = $('.menu-toggle'),
+	let menuToggle   = $('#menu'),
 		navContainer = $('.navigation-menu');
 
 	/* Hide/ Show Menu */
-	menuToggle.click(function () {
+	menuToggle.change(function () {
 		if (navContainer.attr('data-dropped') === 'false') {
 			navContainer.attr('data-dropped', 'true');
-			menuOpen.fadeOut();
-			menuClose.fadeIn();
 			navContainer.fadeIn();
 			return;
 		}
+		
 		closeNav();
 	});
 
@@ -35,8 +32,6 @@ $(document).ready(function() {
 	/* Close Menu */
 	function closeNav() {
 		navContainer.attr('data-dropped', 'false');
-		menuOpen.fadeIn();
-		menuClose.fadeOut();
 		navContainer.fadeOut();
 	};
 });

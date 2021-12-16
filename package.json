@@ -7,7 +7,9 @@
   "scripts": {
     "build-start-css": "postcss src/css/start.css -o css/start-cm.css",
     "build-start-css-watch": "postcss src/css/start.css -o css/start-cm.css --watch",
+    "build-start-css-production": "postcss src/css/start.css -o css/start-cm.css --minify",
     "build-onepage-css": "postcss src/css/onepage.css -o css/onepage-cm.css",
+    "build-onepage-css-production": "postcss src/css/onepage.css -o css/onepage-cm.css --minify",
     "build-onepage-css-watch": "postcss src/css/onepage.css -o css/onepage-cm.css --watch"
   }
 }

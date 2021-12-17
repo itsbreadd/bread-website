@@ -63,9 +63,7 @@ footer {
 
 .navigation-menu > ul > li > a {
 	display: block;
-	padding: 10px;
 	width: 100%;
-	height: 100%;
 }
 
 /*animation-duration: 1s;
@@ -93,6 +91,11 @@ section {
 	background-image: linear-gradient(#2196f3, #2196f3);
   background-position: 0px 15px;
   background-repeat: no-repeat;
+}
+
+.switch-container {
+	height: 17px;
+	transform: translate(-14px, 0px);
 }
 
 .switch {
@@ -183,43 +186,56 @@ input:checked + .slider:before {
   transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
-span:nth-of-type(1) {
+.menu-toggle > span:nth-of-type(1) {
   width: 50%;
 }
 
-span:nth-of-type(2) {
+.menu-toggle > span:nth-of-type(2) {
   width: 75%;
 }
 
-span:nth-of-type(3) {
+.menu-toggle > span:nth-of-type(3) {
   width: 100%; 
 }
 
-input[type="checkbox"] {
+.menu-toggle > input[type="checkbox"] {
   display: none;
 }
 
-input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+.menu-toggle > input[type="checkbox"]:checked ~ span:nth-of-type(1) {
   transform: rotatez(45deg) translate(2px,0px)
 }
 
-input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+.menu-toggle > input[type="checkbox"]:checked ~ span:nth-of-type(2) {
   width: 98%;
   transform: rotatez(-45deg)
 }
 
-input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+.menu-toggle > input[type="checkbox"]:checked ~ span:nth-of-type(3) {
   width: 50%;
   transform: translate(12px,-2px) rotatez(45deg);
 }
 
+/* Static/ Hover Cursor Anim */
+.static-typewriter {
+	animation: cursorStatic 1.25s infinite normal;
+}
 
-/* Animation Mob */
+.menu-link:hover > .menu-text {
+	animation: cursorStatic 1.25s infinite normal;
+}
+
+/* Moving Animation Mob */
 .typewriter {
   width: 0;
   white-space: nowrap;
   overflow: hidden;
-  animation: typewriter 5s steps(7) 1s infinite normal, blinkTextCursor 1.25s infinite normal;
+  animation: typewriter 5s steps(7) 1s infinite normal, cursorStatic 1.25s infinite normal;
+}
+
+@keyframes cursorStatic {
+  0% { box-shadow: 2px 0 0 0 black; }
+  100% { box-shadow: 0; }
 }
 
 @keyframes typewriter {
@@ -236,7 +252,7 @@ input[type="checkbox"]:checked ~ span:nth-of-type(3) {
 }
 
 @media only screen and (min-width : 336px) {
-	/* Animation Desk */
+	/* Moving Animation Desk */
 	.typewriter {
 	  width: 0;
 	  white-space: nowrap;

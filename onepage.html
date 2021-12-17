@@ -16,13 +16,9 @@
                     <h1 class="text-3xl font-medium typewriter xs:hidden">Bradley</h1>
                     <h1 class="text-3xl font-medium typewriter hidden xs:block">Bradley Archer</h1>
                 </a>
-                <!-- <label class="switch left-2 absolute">
-                    <input type="checkbox">
-                    <span class="slider absolute inset-0"></span>
-                </label> -->
                 <a href="https://goo.gl/maps/ctUkXz5ERKhKRCUi9" target="_blank"><i class="bounce fa fa-map-marker mr-2"></i>Nottingham</a>
             </div>
-            <label class="menu-toggle top-0 right-0 h-full flex flex-col cursor-pointer absolute justify-center mr-5" for="menu">
+            <label class="menu-toggle top-0 right-0 h-full flex flex-col cursor-pointer absolute justify-center mr-5 z-20" for="menu">
               <input type="checkbox" id="menu"/> 
               <span class="bg-black"></span>
               <span class="bg-black"></span>
@@ -30,13 +26,55 @@
             </label>
     	</header>
 
-    	<div class="navigation-menu absolute w-full h-full text-center" data-dropped="false">
+    	<div class="navigation-menu w-full h-full text-center fixed top-0 z-10" data-dropped="false">
+            <div class="flex w-full p-5">
+                <a href="/">
+                    <h1 class="text-3xl font-medium text-left static-typewriter">&lt;h1&gt;BA&lt;/h1&gt;</h1>
+                </a>
+            </div>
     		<ul>
-    			<li><a class="menu-link" href="#">Introduction</a></li>
-    			<li><a class="menu-link" href="#">Experience</a></li>
-    			<li><a class="menu-link" href="#">Interests</a></li>
-    			<li><a class="menu-link" href="#">Contact</a></li>
+                <li class="menu-link mb-5"><span class="menu-text">&lt;ul&gt;</span></li>
+    			<li class="menu-item mb-5">
+                    <a class="menu-link" href="#">
+                        <span class="menu-text">
+                            &lt;li&gt;<span class="font-bold">Introduction</span>&lt;/li&gt;
+                        </span>
+                    </a>
+                </li>
+    			<li class="menu-item mb-5">
+                    <a class="menu-link" href="#">
+                        <span class="menu-text">
+                            &lt;li&gt;<span class="font-bold">Experience</span>&lt;/li&gt;
+                        </span>
+                    </a>
+                </li>
+    			<li class="menu-item mb-5">
+                    <a class="menu-link" href="#">
+                        <span class="menu-text">
+                            &lt;li&gt;<span class="font-bold">Interests</span>&lt;/li&gt;
+                        </span>
+                    </a>
+                </li>
+    			<li class="menu-item mb-5">
+                    <a class="menu-link" href="#">
+                        <span class="menu-text">
+                            &lt;li&gt;<span class="font-bold">Contact</span>&lt;/li&gt;
+                        </span>
+                    </a>
+                </li>
+                <li class="menu-link"><span class="menu-text">&lt;/ul&gt;</span></li>
     		</ul>
+            <div class="copyright flex flex-wrap pb-2 text-xs w-full absolute bottom-0">
+                <div class="w-full switch-container mb-5">
+                    <label class="switch absolute">
+                        <input type="checkbox">
+                        <span class="slider absolute inset-0"></span>
+                    </label>
+                </div>
+                <div class="w-full">
+                    <p class="copyright-text">&copy; Bradley Archer</p>
+                </div>
+            </div>
     	</div>
 
         <div class="content p-5">
@@ -73,7 +111,7 @@
                     <p>Javascript</p>
                 </div>
             </section>
-            <section class="w-full p-5">
+            <section class="w-full p-5 mb-5">
                 <div class="section-container">
                     <div class="w-1/2">
                         <h1 class="mb-2">Lanuages & Skills</h1>
@@ -83,6 +121,32 @@
                     <img class="skills-image" src="img/mysql.png" alt="mysql">
                     <img class="skills-image" src="img/javascript.png" alt="javascript">
                     <img class="skills-image" src="img/css.png" alt="css">
+                </div>
+            </section>
+            <section class="w-full p-5">
+                <div class="section-container">
+                    <div class="w-1/2">
+                        <h1 class="mb-2">Get in touch...</h1>
+                    </div>
+                    <p class="mb-5">If you would like to contact me, you can either use the form below, or contact me through one of my social links at the bottom of the page.</p>
+                    <form class="form flex flex-wrap" action="mailto:bradarcher15@googlemail.com?subject=Brad Archer Website Query" method="post" enctype="text/plain">
+                        <div class="flex flex-wrap w-full md:flex-nowrap">
+                            <input name="first-name" class="w-full md:w-1/2 md:mr-2 mb-5 p-2" type="text" placeholder="First Name*" />
+                            <input name="last-name" class="w-full md:w-1/2 md:ml-2 mb-5 p-2" type="text" placeholder="Last Name*" />
+                        </div>
+                        <input name="company" class="w-full mb-5 p-2" type="text" placeholder="Company" />
+                        <select name="subject" class="w-full mb-5 p-2">
+                            <option selected disabled>Select Query*</option>
+                            <option>General</option>
+                            <option>Website/Technical</option>
+                            <option>Job Queries</option>
+                            <option>Other</option>
+                        </select>
+                        <textarea name="message" class="w-full p-2 mb-5" placeholder="Type Your Message Here*" rows="4"></textarea>
+                        <div class="flex justify-end w-full">
+                            <button class="p-2" type="submit">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </section>
         </div>

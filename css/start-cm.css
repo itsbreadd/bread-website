@@ -390,6 +390,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pointer-events-auto {
   pointer-events: auto;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
@@ -421,6 +424,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .z-10 {
   z-index: 10;
 }
+.z-20 {
+  z-index: 20;
+}
 .m-auto {
   margin: auto;
 }
@@ -441,14 +447,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mr-2 {
   margin-right: 0.5rem;
 }
+.mr-5 {
+  margin-right: 1.25rem;
+}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
-}
-.mr-5 {
-  margin-right: 1.25rem;
 }
 .flex {
   display: flex;
@@ -527,10 +533,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 .font-bold {
   font-weight: 700;

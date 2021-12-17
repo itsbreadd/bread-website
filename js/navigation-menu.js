@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	let menuToggle   = $('#menu'),
-		navContainer = $('.navigation-menu');
+		navContainer = $('.navigation-menu'),
+		navLinks     = $('.menu-item');
 
 	/* Hide/ Show Menu */
 	menuToggle.change(function () {
@@ -16,6 +17,8 @@ $(document).ready(function() {
 	/* Close Menu On Scroll */
 	window.addEventListener("scroll", function () {
 		if (navContainer.attr('data-dropped') === 'true') {
+			/* Close Anim On Scroll If Open */
+			resolveMenuAnimation();
 			closeNav();
 		}
 	});
@@ -28,6 +31,19 @@ $(document).ready(function() {
 	  	closeNav();
 	  }        
 	});
+
+	navLinks.click(function (element) {
+		/* ADD SCROLL TO FUNCTIONALITY HERE */
+		resolveMenuAnimation();
+		closeNav();
+	});
+
+	/* Will Change Menu Icon Back To Cross If Closed */
+	function resolveMenuAnimation() {
+		if (menuToggle.is(':checked')) {
+			menuToggle.prop('checked', false);
+		}
+	}
 
 	/* Close Menu */
 	function closeNav() {

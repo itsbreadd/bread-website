@@ -77,13 +77,34 @@
             </div>
     	</div>
 
-        <div class="content p-5">
+        <div class="content p-5 mx-auto">
             <section class="w-full p-5 mb-5">
                 <div class="w-1/2">
-                    <h1 class="mb-2">Bio</h1>
+                    <h1 class="mb-2">About Me:</h1>
                 </div>
-                <p>My name is Bradley Archer and im currently a junior web developer.</p>
+                <div>
+                    <div class="w-1/4 bg-red-500">{{Image of me}}</div>
+                    <div class="w-3/4">
+                        <p></p>
+                    </div>
+                </div>
             </section>
+            <section class="terminal relative bg-black shadow rounded text-white">
+                <div class="action-bar px-2 relative rounded-t-md">
+                    <div class="btns absolute flex items-center h-full">
+                        <span class="action-btn flex justify-center items-center bg-close border-close-dark rounded-full border mr-2">
+                            <span class="close-inner-circle bg-close-inner block rounded-full"></span>
+                        </span>
+                        <span class="action-btn block bg-minimize border-minimize-dark rounded-full border mr-2"></span>
+                        <span class="action-btn block bg-maximize border-maximize-dark rounded-full border"></span>
+                    </div>
+                    <div class="text-center md:hidden">..about-me.txt</div>
+                    <div class="text-center hidden md:block">~/Projects/bread-website/about-me.txt</div>
+                </div>
+                <p class="text-left p-5">
+                    > my name is bradley archer and im currently a junior web developer.
+                </p>
+            </div>
             <section class="w-full p-5 mb-5">
                 <div class="section-container">
                     <div class="w-1/2">
@@ -128,7 +149,7 @@
                     <div class="w-1/2">
                         <h1 class="mb-2">Get in touch...</h1>
                     </div>
-                    <p class="mb-5">If you would like to contact me, you can either use the form below, or contact me through one of my social links at the bottom of the page.</p>
+                    <p class="mb-5">I am not currently looking for new roles. However, if you would like to contact me: you can either use the form below, or contact me through one of my social links at the bottom of the page.</p>
                     <form class="form flex flex-wrap" action="mailto:bradarcher15@googlemail.com?subject=Brad Archer Website Query" method="post" enctype="text/plain">
                         <div class="flex flex-wrap w-full md:flex-nowrap">
                             <input name="first-name" class="w-full md:w-1/2 md:mr-2 mb-5 p-2" type="text" placeholder="First Name*" />

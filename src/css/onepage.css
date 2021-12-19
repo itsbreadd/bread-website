@@ -28,6 +28,12 @@ footer {
 	background-color: #F4F4F4;
 }
 
+input, select, textarea {
+	background: transparent;
+	border-bottom: 1px solid black;
+	resize: none;
+}
+
 .menu-toggle {
 	cursor: pointer;
 	width: 60px;

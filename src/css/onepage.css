@@ -28,10 +28,23 @@ footer {
 	background-color: #F4F4F4;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
 	background: transparent;
 	border-bottom: 1px solid black;
 	resize: none;
+}
+
+input.error,
+select.error,
+textarea.error {
+	border-bottom: 1px solid red;
+}
+
+label.error {
+	font-size: 0.75rem;
+	color: red;
 }
 
 .menu-toggle {

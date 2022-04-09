@@ -184,10 +184,6 @@ input:checked + .slider:before {
   filter: invert(100%);
 }
 
-.skills-image {
-	width: 100px;
-}
-
 .social-links {
 	font-size: 1.25em;
 	max-width: 500px;
@@ -333,4 +329,20 @@ input:checked + .slider:before {
 .date {
 	writing-mode: vertical-rl;
 	text-align: center;
+}
+
+.skills {
+	background-color: black;
+	padding: 0.3rem;
+	color: white;
+	display: inline-block;
+	text-align: center;
+}
+
+.skills-container p:nth-child(odd) {
+  transform: rotate(2deg);
+}
+
+.skills-container p:nth-child(even) {
+  transform: rotate(-2deg);
 }

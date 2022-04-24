@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	let sections 	  = $('section');
 	let sectionsState = {};
+	let backToTopBtn  = $('.back-to-top');
 
 	sections.each(function(index, element) {
 		sectionsState[index] = {
@@ -18,6 +19,7 @@ $(document).ready(function() {
 		return elementBottom > viewportTop && elementTop < viewportBottom;
 	}
 
+	handleBackToTop();
 	renderSections();
 
 	function renderSections() {
@@ -31,7 +33,21 @@ $(document).ready(function() {
 		});
 	}
 
+	function handleBackToTop() {
+		if ($(window).scrollTop() > 50) {
+			backToTopBtn.attr('style', 'display: inline-block !important');
+		} else {
+			backToTopBtn.attr('style', 'display: none !important');
+		}
+	}
+
 	$(window).on('resize scroll', function() {
+		handleBackToTop();
 		renderSections();
+	});
+
+	backToTopBtn.click(function() {
+		document.body.scrollTop = 0;
+  		document.documentElement.scrollTop = 0;
 	});
 });

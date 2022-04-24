@@ -59,6 +59,15 @@ h3 {
 	font-style: italic;
 }
 
+.back-to-top {
+	z-index: 10;
+	font-size: 3rem;
+}
+
+.back-to-top:hover {
+	color: #4d4d4d;
+}
+
 .menu-toggle {
 	cursor: pointer;
 	width: 60px;

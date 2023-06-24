@@ -611,10 +611,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -622,6 +618,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -667,6 +667,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-medium {
   font-weight: 500;
+}
+.font-light {
+  font-weight: 300;
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -758,17 +761,6 @@ h3 {
 .menu-toggle {
 	cursor: pointer;
 	width: 60px;
-}
-
-.experience-menu-open, .experience-menu-close {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.experience-menu-close.fa {
-	display: none;
 }
 
 .bounce {

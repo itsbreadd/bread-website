@@ -73,17 +73,6 @@ h3 {
 	width: 60px;
 }
 
-.experience-menu-open, .experience-menu-close {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.experience-menu-close.fa {
-	display: none;
-}
-
 .bounce {
   animation: bounce 1s ease infinite;
 }

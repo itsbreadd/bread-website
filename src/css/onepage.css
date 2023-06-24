@@ -270,13 +270,15 @@ input:checked + .slider:before {
 }
 
 @keyframes cursorStatic {
-  0% { box-shadow: 2px 0 0 0 black; }
-  100% { box-shadow: 0; }
+  0% { box-shadow: 0; }
+  75% { box-shadow: 2px 0 0 0 black; }
+  100% { box-shadow: 2px 0 0 0 black; }
 }
 
 @keyframes cursorStaticLight {
-  0% { box-shadow: 2px 0 0 0 white; }
-  100% { box-shadow: 0; }
+  0% { box-shadow: 0; }
+  75% { box-shadow: 2px 0 0 0 white; }
+  100% { box-shadow: 2px 0 0 0 white; }
 }
 
 @keyframes typewriter {

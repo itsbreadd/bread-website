@@ -971,23 +971,27 @@ input:checked + .slider:before {
 }
 
 @-webkit-keyframes cursorStatic {
-  0% { box-shadow: 2px 0 0 0 black; }
-  100% { box-shadow: 0; }
+  0% { box-shadow: 0; }
+  75% { box-shadow: 2px 0 0 0 black; }
+  100% { box-shadow: 2px 0 0 0 black; }
 }
 
 @keyframes cursorStatic {
-  0% { box-shadow: 2px 0 0 0 black; }
-  100% { box-shadow: 0; }
+  0% { box-shadow: 0; }
+  75% { box-shadow: 2px 0 0 0 black; }
+  100% { box-shadow: 2px 0 0 0 black; }
 }
 
 @-webkit-keyframes cursorStaticLight {
-  0% { box-shadow: 2px 0 0 0 white; }
-  100% { box-shadow: 0; }
+  0% { box-shadow: 0; }
+  75% { box-shadow: 2px 0 0 0 white; }
+  100% { box-shadow: 2px 0 0 0 white; }
 }
 
 @keyframes cursorStaticLight {
-  0% { box-shadow: 2px 0 0 0 white; }
-  100% { box-shadow: 0; }
+  0% { box-shadow: 0; }
+  75% { box-shadow: 2px 0 0 0 white; }
+  100% { box-shadow: 2px 0 0 0 white; }
 }
 
 @-webkit-keyframes typewriter {

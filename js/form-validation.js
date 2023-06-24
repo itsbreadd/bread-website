@@ -3,7 +3,9 @@ $(document).ready(function() {
 
 	form.validate({
 		errorPlacement: function(error, element) {
-           error.insertAfter(element);
+			// Ensure Errors Fade In & Are Inserted After Inputs.
+        	error.hide();
+            error.fadeIn('200').insertAfter(element);
        },
 	});
 });

@@ -35,9 +35,9 @@ $(document).ready(function() {
 
 	function handleBackToTop() {
 		if ($(window).scrollTop() > 50) {
-			backToTopBtn.attr('style', 'display: inline-block !important');
+			backToTopBtn.fadeIn(200);
 		} else {
-			backToTopBtn.attr('style', 'display: none !important');
+			backToTopBtn.fadeOut(200);
 		}
 	}
 

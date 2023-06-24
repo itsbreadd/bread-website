@@ -208,19 +208,23 @@
                     </div>
                     <p class="mb-5">I am not currently looking for new roles. However, if you would like to contact me: you can use the form below. If you'd prefer you can contact me through one of my social links at the bottom of the page.</p>
                     <form class="contact-form form flex flex-wrap" action="mailto:bradarcher15@googlemail.com?subject=Brad Archer Website Query" method="post" enctype="text/plain">
+                        <input name="company" class="w-full mt-5 py-1 px-2" type="text" placeholder="> Company" />
                         <div class="flex flex-wrap w-full md:flex-nowrap">
-                            <input name="first-name" class="w-full md:w-1/2 md:mr-2 md:mt-5 py-1 px-3" type="text" placeholder="> First Name*" required />
-                            <input name="last-name" class="w-full md:w-1/2 md:ml-2 mt-5 py-1 px-3" type="text" placeholder="> Last Name*" required />
+                            <div class="w-full md:w-1/2 ">
+                                <input name="first-name" class="w-full md:mr-2 md:mt-5 py-1 px-2" type="text" placeholder="> First Name*" required />
+                            </div>
+                            <div class="w-full md:w-1/2 ">
+                                <input name="last-name" class="w-full md:ml-2 mt-5 py-1 px-2" type="text" placeholder="> Last Name*" required />
+                            </div>
                         </div>
-                        <input name="company" class="w-full mt-5 py-1 px-3" type="text" placeholder="> Company" />
-                        <select name="subject" class="w-full mt-5 py-1 px-3" required>
+                        <select name="subject" class="w-full mt-5 py-1 px-1" required>
                             <option value="" selected disabled hidden>> Select Query*</option>
                             <option>General</option>
                             <option>Website/Technical</option>
                             <option>Job Queries</option>
                             <option>Other</option>
                         </select>
-                        <textarea name="message" class="w-full py-1 px-3 mt-5" placeholder="> Type Your Message Here*" rows="4" required></textarea>
+                        <textarea name="message" class="w-full py-1 px-2 mt-5" placeholder="> Type Your Message Here*" rows="4" required></textarea>
                         <div class="flex justify-end w-full mt-5">
                             <button class="p-2" type="submit">> Send Message</button>
                         </div>

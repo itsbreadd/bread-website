@@ -3,16 +3,17 @@ $(document).ready(function() {
 
 	socialLinks.hover(function() {
 		let centerX = $(this).offset().left + $(this).width() / 2;
+		let title = this.title.toLowerCase();
 
-		$('<div class="tooltip" style="display: none;">' + this.title + '</div>').insertBefore(this)
-			.css({
-				"left": centerX - 40
-			}).fadeIn(200);
+		$(`<div class="tooltip ${title}" style="display: none;">` + this.title + '</div>')
+			.insertBefore(this).css({"left": centerX - 40}).fadeIn(200);
 	},
 	
 	function() {
-		$('.tooltip').fadeOut(200, function () {
-			$('.tooltip').remove();
+		let title   = this.title.toLowerCase();
+		let titleEl = $(`.${title}`);
+		titleEl.fadeOut(200, function () {
+			titleEl.remove();
 		});
 	});
 });

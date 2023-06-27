@@ -51,11 +51,11 @@ label.error {
 	color: red;
 }
 
-h2 {
+h3 {
 	font-weight: 600;
 }
 
-h3 {
+h4 {
 	font-style: italic;
 }
 
@@ -106,7 +106,7 @@ section {
   border-radius: 0rem 0.375rem 0.375rem 0rem;
 }
 
-.section-container h1 {
+.section-container h2 {
   padding-left: 0.5rem;
   color: #FFFFFF;
   font-size: 1.2rem;
@@ -335,7 +335,7 @@ input:checked + .slider:before {
 	color: white;
 	display: inline-block;
 	text-align: center;
-	cursor: default;
+	cursor: pointer;
 }
 
 @keyframes wiggle-odd {
@@ -361,9 +361,9 @@ input:checked + .slider:before {
 }
 
 .skills-container p:nth-child(odd):hover {
-  animation: wiggle-odd 1s ease infinite;
+  animation: wiggle-odd 1s ease infinite alternate forwards;
 }
 
 .skills-container p:nth-child(even):hover {
-  animation: wiggle-even 1s ease infinite;
+  animation: wiggle-even 1s ease infinite alternate forwards;
 }

@@ -113,42 +113,64 @@
                         <span class="action-btn block bg-minimize border-minimize-dark rounded-full border mr-2"></span>
                         <span class="action-btn block bg-maximize border-maximize-dark rounded-full border"></span>
                     </div>
-                    <div class="text-center md:hidden">..about-me.txt</div>
-                    <div class="text-center hidden md:block">~/Projects/bread-website/about-me.txt</div>
+                    <div class="text-center md:hidden">..bread-website</div>
+                    <div class="text-center hidden md:block">~/Projects/bread-website/</div>
                 </div>
-                <p class="text-left p-5">
-                    > Hello, my name is Bradley Archer i am currently a <span class="text-blue-700 font-bold">full-stack</span> Web Developer at <span class="text-blue-700 font-bold">Paul Smith Ltd.</span><br>
-                    > I code because of my passion for problem solving.<br>
-                    > I work with variety of languages & frameworks to develop & maintain web based <span class="text-blue-700 font-bold">ecommerce</span> solutions.<br>
-                    > Mainly focused on <span class="text-blue-700 font-bold">Magento 2</span> but have been exposed to a variety of languages & frameworks.<br>
-                    > Weakness: excessive chrome tabs.
-                </p>
+                <div class="text-left p-5">
+                    <p>> php artisan run:mediocre:introduction</p>
+                    <p class="flex my-2 ml-5 bg-red-600 p-6 w-fit">Command Aborted.</p>
+                    <p>> php artisan run:introduction</p>
+                    <p class="ml-5 text-green-600">Executing Introduction...</p>
+                    <p class="ml-5">-- bio --</p>
+                    <p class="ml-5">alias: bread <span class="text-yellow-200">(yum)</span>.</p>
+                    <p class="ml-5">name: bradley archer.</p>
+                    <p class="ml-5">dob: aug 1998.</p>
+                    <p class="ml-5">role: web developer.</p>
+                    <p class="ml-5">position: full-stack senior web developer @ Paul Smith Ltd.</p>
+                    <p class="ml-5">passion: problem solving, drives love for code.</p>
+                    <br>
+                    <p class="ml-5 text-green-600">Executing Preferences Overview...</p>
+                    <p class="ml-5">-- preferences --</p>
+                    <p class="ml-5">languages: php (8.1), vue3, sql, graphql.</p>
+                    <p class="ml-5">frameworks: magento 2 (2.4.3), laravel 10, tailwind.</p>
+                    <p class="ml-5">code editor: php storm <span class="text-yellow-200">(forever)</span>.</p>
+                    <br>
+                    <p class="ml-5 text-green-600">Executing Experience Overview...</p>
+                    <p class="ml-5">-- experience --</p>
+                    <p class="ml-5">> history working with a variety of languages & frameworks to develop & maintain a web based <span class="text-yellow-200">ecommerce</span> stores.</p>
+                    <p class="ml-5">> years of experience in <span class="text-yellow-200">Magento 2</span>. from plugins, to events. writing my own <span class="text-yellow-200">custom modules/ components</span>. creating and managing <span class="text-yellow-200">crons</span>. mainly going out of my way to <span class="text-yellow-200">automate</span> manual business processes.</p>
+                    <br>
+                    <p class="ml-5 text-green-600">Executing Weaknesses Overview...</p>
+                    <p class="ml-5">-- weaknesses --</p>
+                    <p class="ml-5">excessive chrome tabs.</p>
+                    <p class="flex my-2 ml-5 bg-red-600 p-6 w-fit">PHP Fatal error: Allowed memory size of 536870912 bytes exhausted (tried to facilitate a chrome tab addiction) please see below for detailed explanation, aborting...</p>
+                </div>
             </section>
             <section id="experience" class="w-full p-5 mb-5">
                 <div class="section-container">
                     <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h1>Experience</h1>
+                        <h2 class="static-typewriter-light">&lt;h2&gt;Experience&lt;/h2&gt;</h2>
                     </div>
                     <div class="flex py-2">
-                        <p class="date rotate-180">2023-Now</p>
+                        <p class="date rotate-180 italic">2023-Now</p>
                         <div class="w-full px-3 border-l-2 border-black">
-                            <h2>Paul Smith <small class="font-light">(Senior Web Developer)</small></h2>
+                            <h3>Paul Smith <small class="font-light">(Senior Web Developer)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP, Laravel 10, Vue3, ChatGPT, API's, GraphQl, Centra.</p>
                             <p>Lots of backend API focus, developing Laravel bridge between ERP and Centra to: import, map, store, and export data.</p>
                         </div>
                     </div>
                     <div class="flex py-2">
-                        <p class="date rotate-180">2022-2023</p>
+                        <p class="date rotate-180 italic">2022-2023</p>
                         <div class="w-full px-3 border-l-2 border-black">
-                            <h2>Paul Smith <small class="font-light">(Web Developer)</small></h2>
+                            <h3>Paul Smith <small class="font-light">(Web Developer)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP, Velocity, React (Vague), MySql, GTM, SGTM, Consent.</p>
                             <p>Mainly focused on third party integrations (Nosto, Klevu, Gpay, Apple Pay, UserCentrics) and custom Magento modules to handle crucial business processes.</p>
                         </div>
                     </div>
                     <div class="flex py-2">
-                        <p class="date rotate-180">2019-2022</p>
+                        <p class="date rotate-180 italic">2019-2022</p>
                         <div class="w-full px-3 border-l-2 border-black">
-                            <h2>Paul Smith <small class="font-light">(Junior Web Devloper)</small></h2>
+                            <h3>Paul Smith <small class="font-light">(Junior Web Devloper)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP, Magento 2, jQuery, Javascript, KnockoutJS.</p>
                             <p>Coming to terms with Magento concepts: Dependency Injection, Events, Observers... (Lots of fontend work).</p>
                         </div>
@@ -158,27 +180,27 @@
             <section id="education" class="w-full p-5 mb-5">
                 <div class="section-container">
                     <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h1>Education</h1>
+                        <h2 class="static-typewriter-light">&lt;h2&gt;Education&lt;/h2&gt;</h2>
                     </div>
                     <div class="flex py-2">
-                        <p class="date rotate-180">2018-2019</p>
+                        <p class="date rotate-180 italic">2018-2019</p>
                         <div class="w-full px-3 border-l-2 border-black">
-                            <h2>Demontfort Universtity <small class="font-light">(Bachelor of Science, Computing (Hons) 1st)</small></h2>
+                            <h3>Demontfort Universtity <small class="font-light">(Bachelor of Science, Computing (Hons) 1st)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP, Bootstrap, HTML, CSS, SCSS, LESS, SQL, jQuery</p>
                             <p>Developing responsive mobile first websites, incuding an introduction to DBSM and principles. Other modules included, IT in developing countries, Project Management, and more.</p>
                         </div>
                     </div>
                     <div class="flex py-2">
-                        <p class="date rotate-180">2016-2018</p>
+                        <p class="date rotate-180 italic">2016-2018</p>
                         <div class="w-full px-3 border-l-2 border-black">
-                            <h2>New College Nottingham <small class="font-light">(Pearson Higher National HNC/D Computing)</small></h2>
+                            <h3>New College Nottingham <small class="font-light">(Pearson Higher National HNC/D Computing)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP</p>
                         </div>
                     </div>
                     <div class="flex py-2">
-                        <p class="date rotate-180">2013-2016</p>
+                        <p class="date rotate-180 italic">2013-2016</p>
                         <div class="w-full px-3 border-l-2 border-black">
-                            <h2>Confetti <small class="font-light">(Games Development)</small></h2>
+                            <h3>Confetti <small class="font-light">(Games Development)</small></h3>
                             <p><strong>Software: </strong>Rhino 3D, Unreal Engine 4, Photoshop</p>
                         </div>
                     </div>
@@ -187,18 +209,18 @@
             <section id="current-role" class="w-full p-5 mb-5">
                 <div class="section-container">
                     <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h1>Current Role</h1>
+                        <h2 class="static-typewriter-light">&lt;h2&gt;Current Role&lt;/h2&gt;</h2>
                     </div>
-                    <p>As previously mentioned due to the constantly evolving <span class="text-blue-700 font-bold">ecommerce</span> sector i have been exposed to a variety of languages and frameworks; with our most recent project being a <span class="text-blue-700 font-bold">headless</span> build. I have developed & maintained custom modules to create or improve upon business processes including communication through <span class="text-blue-700 font-bold">ERP systems</span> through API's.
+                    <p>As previously mentioned due to the constantly evolving <span class="text-yellow-200 font-bold">ecommerce</span> sector i have been exposed to a variety of languages and frameworks; with our most recent project being a <span class="text-yellow-200 font-bold">headless</span> build. I have developed & maintained custom modules to create or improve upon business processes including communication through <span class="text-yellow-200 font-bold">ERP systems</span> through API's.
                     </p>
-                    <p>During my time at <span class="text-blue-700 font-bold">Paul Smith</span>, i have a few aspects i am particularly proud of:</p>
+                    <p>During my time at <span class="text-yellow-200 font-bold">Paul Smith</span>, i have a few aspects i am particularly proud of:</p>
                     <ul>
-                        <li class="pt-6 pb-3"><i class="fa-solid fa-carrot mr-2"></i>Building & maintaining <span class="text-blue-700 font-bold">Magento 2</span> modules to ensure business process continue to run smoothly & more efficiently</li>
+                        <li class="pt-6 pb-3"><i class="fa-solid fa-carrot mr-2"></i>Building & maintaining <span class="text-yellow-200 font-bold">Magento 2</span> modules to ensure business process continue to run smoothly & more efficiently</li>
                         <li class="py-3"><i class="fa-solid fa-cat mr-2"></i>Providing technical support through both phone & email to a variety of departments.</li>
-                        <li class="py-3"><i class="fa-solid fa-champagne-glasses mr-2"></i>Sole management of web aspects contained within our separate <span class="text-blue-700 font-bold">business to business</span> website (involved the importing & maintaining of: <span class="text-blue-700 font-bold">products, prices, stock, etc...</span>). Including maintainence the services that import them. At one point this also involved the uploading of imagery through <span class="text-blue-700 font-bold">Cloudinary</span> which was later automated.</li>
-                        <li class="py-3"><i class="fa-solid fa-cheese mr-2"></i>Despite little knowledge of <span class="text-blue-700 font-bold">Vue</span>, i jumped into our new <span class="text-blue-700 font-bold">headless</span> build & respectively rebuilt/ improved upon specific areas, recently rewriting our <span class="text-blue-700 font-bold">wishlist</span> functionality using <span class="text-blue-700 font-bold">Axios, GraphQl, & Laravel</span> to communicate with Magento.</li>
-                        <li class="py-3"><i class="fa-solid fa-chair mr-2"></i>Independent implementation of many third party services, including: <span class="text-blue-700 font-bold">Nosto</span> (Product Recommendations, Category Merchandising, template building using <span class="text-blue-700 font-bold">Velocity</span>), <span class="text-blue-700 font-bold">Klevu</span> (Search), <span class="text-blue-700 font-bold">Apple Pay</span> (through <span class="text-blue-700 font-bold">Adyen</span>). Also including <span class="text-blue-700 font-bold">analytics</span>, typically handled in <span class="text-blue-700 font-bold">GTM (Google Tag Manager)</span> including: <span class="text-blue-700 font-bold">Facebook Pixel, Rakuten, Nosto Tracking.</span></li>
-                        <li class="py-3"><i class="fa-solid fa-barcode mr-2"></i>I developed a system for <span class="text-blue-700 font-bold">generating barcodes</span> using <span class="text-blue-700 font-bold">Zend Barcode</span> and placing them on returns forms, allowing the <span class="text-blue-700 font-bold">warehouse</span> to process returns at a faster rate.</li>
+                        <li class="py-3"><i class="fa-solid fa-champagne-glasses mr-2"></i>Sole management of web aspects contained within our separate <span class="text-yellow-200 font-bold">business to business</span> website (involved the importing & maintaining of: <span class="text-yellow-200 font-bold">products, prices, stock, etc...</span>). Including maintainence the services that import them. At one point this also involved the uploading of imagery through <span class="text-yellow-200 font-bold">Cloudinary</span> which was later automated.</li>
+                        <li class="py-3"><i class="fa-solid fa-cheese mr-2"></i>Despite little knowledge of <span class="text-yellow-200 font-bold">Vue</span>, i jumped into our new <span class="text-yellow-200 font-bold">headless</span> build & respectively rebuilt/ improved upon specific areas, recently rewriting our <span class="text-yellow-200 font-bold">wishlist</span> functionality using <span class="text-yellow-200 font-bold">Axios, GraphQl, & Laravel</span> to communicate with Magento.</li>
+                        <li class="py-3"><i class="fa-solid fa-chair mr-2"></i>Independent implementation of many third party services, including: <span class="text-yellow-200 font-bold">Nosto</span> (Product Recommendations, Category Merchandising, template building using <span class="text-yellow-200 font-bold">Velocity</span>), <span class="text-yellow-200 font-bold">Klevu</span> (Search), <span class="text-yellow-200 font-bold">Apple Pay</span> (through <span class="text-yellow-200 font-bold">Adyen</span>). Also including <span class="text-yellow-200 font-bold">analytics</span>, typically handled in <span class="text-yellow-200 font-bold">GTM (Google Tag Manager)</span> including: <span class="text-yellow-200 font-bold">Facebook Pixel, Rakuten, Nosto Tracking.</span></li>
+                        <li class="py-3"><i class="fa-solid fa-barcode mr-2"></i>I developed a system for <span class="text-yellow-200 font-bold">generating barcodes</span> using <span class="text-yellow-200 font-bold">Zend Barcode</span> and placing them on returns forms, allowing the <span class="text-yellow-200 font-bold">warehouse</span> to process returns at a faster rate.</li>
                         <li class="py-3">I pride myself on writing readable and maintainable code, making sure whenever i edit a file that it is up to PSR4 standards.</li>
                     </ul>
                 </div>
@@ -206,7 +228,7 @@
             <section id="language-skills" class="w-full p-5 mb-5">
                 <div class="section-container">
                     <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h1>Lanuages & Skills</h1>
+                        <h2 class="static-typewriter-light">&lt;h2&gt;Lanuages & Skills&lt;/h2&gt;</h2>
                     </div>
                     <p class="mb-5">At home with Magento & PHP, however i enjoy learning new languages & furthering my skills. Due to a recent headless implementation at my current role (despite me mainly being focused on backend) i have been advancing in Laravel & Vue.</p>
                     <div class="skills-container grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
@@ -226,7 +248,7 @@
             <section id="interests" class="w-full p-5 mb-5">
                 <div class="section-container">
                     <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h1>Interests</h1>
+                        <h2 class="static-typewriter-light">&lt;h2&gt;Interests&lt;/h2&gt;</h2>
                     </div>
                     <ul>
                         <li><strong>Movies:</strong> Into the Wild, Alien, Prometheus, Your Name, The Martian...</li>
@@ -239,7 +261,7 @@
             <section id="contact" class="w-full p-5">
                 <div class="section-container">
                     <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h1>Get in touch...</h1>
+                        <h2 class="static-typewriter-light">&lt;h2&gt;Get in touch...&lt;/h2&gt;</h2>
                     </div>
                     <p class="mb-5">I am not currently looking for new roles. However, if you would like to contact me: you can use the form below. If you'd prefer you can contact me through one of my social links at the bottom of the page.</p>
                     <form class="contact-form form flex flex-wrap" action="mailto:bradarcher15@googlemail.com?subject=Brad Archer Website Query" method="post" enctype="text/plain">

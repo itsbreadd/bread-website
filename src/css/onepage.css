@@ -246,6 +246,11 @@ input:checked + .slider:before {
 	animation: cursorStaticLight 1.25s infinite normal;
 }
 
+.static-typewriter-light-odd {
+	animation: cursorStaticLight 1.25s infinite normal;
+	animation-delay: 0.75s;
+}
+
 .menu-link:hover > .menu-text {
 	animation: cursorStatic 1.25s infinite normal;
 }
@@ -366,4 +371,8 @@ input:checked + .slider:before {
 
 .skills-container p:nth-child(even):hover {
   animation: wiggle-even 1s ease infinite alternate forwards;
+}
+
+.current-role .section-container li:nth-child(odd) i {
+	color: blue;
 }

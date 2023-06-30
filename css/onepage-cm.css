@@ -974,6 +974,13 @@ input:checked + .slider:before {
 	        animation: cursorStaticLight 1.25s infinite normal;
 }
 
+.static-typewriter-light-odd {
+	-webkit-animation: cursorStaticLight 1.25s infinite normal;
+	        animation: cursorStaticLight 1.25s infinite normal;
+	-webkit-animation-delay: 0.75s;
+	        animation-delay: 0.75s;
+}
+
 .menu-link:hover > .menu-text {
 	-webkit-animation: cursorStatic 1.25s infinite normal;
 	        animation: cursorStatic 1.25s infinite normal;
@@ -1152,6 +1159,10 @@ input:checked + .slider:before {
 .skills-container p:nth-child(even):hover {
   -webkit-animation: wiggle-even 1s ease infinite alternate forwards;
           animation: wiggle-even 1s ease infinite alternate forwards;
+}
+
+.current-role .section-container li:nth-child(odd) i {
+	color: blue;
 }
 
 @media (min-width: 336px) {

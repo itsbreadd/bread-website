@@ -32,7 +32,6 @@ $(document).ready(function() {
 	});
 
 	navLinks.click(function (element) {
-		/* ADD SCROLL TO FUNCTIONALITY HERE */
 		resolveMenuAnimation();
 		closeNav();
 	});

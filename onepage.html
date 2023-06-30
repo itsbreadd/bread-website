@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="w-full h-full">
+<html>
 	<head>
         <title>Experiences</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +10,9 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" crossorigin="anonymous"></script>
     </head>
 
-    <body class="w-full h-full text-black">
+    <body class="text-black">
         <a class="fixed bottom-0 right-0 mb-4 mr-4 back-to-top cursor-pointer fa-solid fa-circle-arrow-up" title="Back to Top" style="display: none"></a>
-    	<header class="w-full flex justify-start relative p-5">
+    	<header class="w-full flex justify-start sticky top-0 z-10 p-5">
             <div>
         		<a href="/" title="Home">
                     <h1 class="text-3xl font-medium typewriter xs:hidden">Bradley</h1>
@@ -20,7 +20,7 @@
                 </a>
                 <a href="https://goo.gl/maps/ctUkXz5ERKhKRCUi9" target="_blank" title="Open Map"><i class="bounce fa-solid fa-location-dot mr-2"></i>Nottingham</a>
             </div>
-            <label class="menu-toggle top-0 right-0 h-full flex flex-col cursor-pointer absolute justify-center mr-5 z-20" for="menu">
+            <label class="menu-toggle flex flex-col cursor-pointer justify-center ml-auto mr-5 z-20" for="menu">
               <input type="checkbox" id="menu"/> 
               <span class="bg-black"></span>
               <span class="bg-black"></span>
@@ -328,6 +328,7 @@
 
         <!-- General Helpers -->
         <script src="js/tooltip.js"></script>
+        <script src="js/header.js"></script>
     	<script src="js/navigation-menu.js"></script>
         <script src="js/light-dark-mode.js"></script>
         <script src="js/scroll-show.js"></script>

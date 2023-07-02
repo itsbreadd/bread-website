@@ -10,7 +10,6 @@ Compiled with postcss using Tailwind and AutoPrefixer
 
 # bugs
 - Stop header show hide events stacking
-- Fix X not appearing when navigation menu is opened
 
 # notes
 - Commented code in onepage.less is animation for desktop nav

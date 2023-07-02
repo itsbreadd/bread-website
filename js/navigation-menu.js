@@ -22,15 +22,6 @@ $(document).ready(function() {
 		}
 	});
 
-	/* Close Menu On Click Outside*/
-	$(document).click(function(e) { 
-	  if(navContainer.attr('data-dropped') === 'true' &&
-	  	!$(e.target).closest('.navigation-menu').length &&
-	  	!$(e.target).closest('header').length) {
-	  	closeNav();
-	  }        
-	});
-
 	navLinks.click(function (element) {
 		resolveMenuAnimation();
 		closeNav();

@@ -6,12 +6,23 @@
         <link rel="icon" href="img/brad.ico"/>
         <link rel="stylesheet" type="text/css" href="css/onepage-cm.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
     </head>
 
-    <body class="text-black">
+    <body class="text-black overscroll-none">
         <a class="fixed bottom-0 right-0 mb-4 mr-4 back-to-top cursor-pointer fa-solid fa-circle-arrow-up" title="Back to Top" style="display: none"></a>
+        <div class="nav-control fixed flex justify-center p-5 z-20 top-0 right-0 hidden">
+            <div class="flex h-full w-full">
+                <label class="menu-toggle flex flex-col cursor-pointer justify-center ml-auto mr-5 z-20" for="menu">
+                  <input type="checkbox" id="menu"/> 
+                  <span class="bg-black pointer-events-none"></span>
+                  <span class="bg-black pointer-events-none"></span>
+                  <span class="bg-black pointer-events-none"></span>
+                </label>
+            </div>
+        </div>
     	<header class="w-full flex justify-start sticky top-0 z-10 p-5">
             <div>
         		<a href="/" title="Home">
@@ -20,12 +31,6 @@
                 </a>
                 <a href="https://goo.gl/maps/ctUkXz5ERKhKRCUi9" target="_blank" title="Open Map"><i class="bounce fa-solid fa-location-dot mr-2"></i>Nottingham</a>
             </div>
-            <label class="menu-toggle flex flex-col cursor-pointer justify-center ml-auto mr-5 z-20" for="menu">
-              <input type="checkbox" id="menu"/> 
-              <span class="bg-black"></span>
-              <span class="bg-black"></span>
-              <span class="bg-black"></span>
-            </label>
     	</header>
     	<div class="navigation-menu w-full h-full text-center fixed top-0 z-10" data-dropped="false">
             <div class="flex w-full p-5">

@@ -14,22 +14,10 @@
 
 body {
 	font-family: var(--font);
-	background-color: white;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: repeat;
 }
 
 html {
 	scroll-behavior: smooth;
-}
-
-header {
-	background-color: #F4F4F4;
-}
-
-footer {
-	background-color: #F4F4F4;
 }
 
 input,
@@ -62,10 +50,11 @@ h4 {
 .back-to-top {
 	z-index: 10;
 	font-size: 2rem;
+	transition: opacity .3s ease-in-out;
 }
 
 .back-to-top:hover {
-	color: #4d4d4d;
+	opacity: 0.7;
 }
 
 .menu-toggle {
@@ -86,7 +75,6 @@ h4 {
 }
 
 .navigation-menu {
-	background-color: #F4F4F4;
 	display: none;
 }
 
@@ -96,19 +84,15 @@ h4 {
 }
 
 section {
-	background-color: #F4F4F4;
 	opacity: 0;
 }
 
 .section-header-container {
-	background-image: linear-gradient(#000000, #000000);
-  background-repeat: no-repeat;
   border-radius: 0rem 0.375rem 0.375rem 0rem;
 }
 
 .section-container h2 {
   padding-left: 0.5rem;
-  color: #FFFFFF;
   font-size: 1.2rem;
   width: fit-content;
   line-height: normal;
@@ -150,16 +134,20 @@ section {
 	left: 4px;
 	top: 2px;
 	border-radius: 50%;
-	background-color: white;
+	background-color: black;
 	transition: .2s;
 }
 
+input:checked + .slider:before {
+	background-color: white;
+}
+
 input:checked + .slider {
-	background-color: #2196F3;
+	background-color: black;
 }
 
 input:focus + .slider {
-	box-shadow: 0 0 1px #2196F3;
+	box-shadow: 0 0 1px black;
 }
 
 input:checked + .slider:before {
@@ -239,20 +227,36 @@ input:checked + .slider:before {
 
 /* Static/ Hover Cursor Anim */
 .static-typewriter {
+	animation: cursorStaticWhite 1.25s infinite normal;
+}
+
+.static-typewriter-odd {
+	animation: cursorStaticWhite 1.25s infinite normal;
+	animation-delay: 0.75s;
+}
+
+.dark .static-typewriter {
 	animation: cursorStatic 1.25s infinite normal;
 }
 
-.static-typewriter-light {
-	animation: cursorStaticLight 1.25s infinite normal;
-}
-
-.static-typewriter-light-odd {
-	animation: cursorStaticLight 1.25s infinite normal;
-	animation-delay: 0.75s;
+.dark .static-typewriter-odd {
+	animation: cursorStatic 1.25s infinite normal;
 }
 
 .menu-link:hover > .menu-text {
 	animation: cursorStatic 1.25s infinite normal;
+}
+
+.dark .menu-link:hover > .menu-text {
+	animation: cursorStaticWhite 1.25s infinite normal;
+}
+
+.nav-heading {
+	animation: cursorStatic 1.25s infinite normal;
+}
+
+.dark .nav-heading {
+	animation: cursorStaticWhite 1.25s infinite normal;
 }
 
 /* Moving Animation Mob */
@@ -263,13 +267,17 @@ input:checked + .slider:before {
   animation: typewriter 5s steps(7) 1s infinite normal, cursorStatic 1.25s infinite normal;
 }
 
+.dark .typewriter {
+  animation: typewriter 5s steps(7) 1s infinite normal, cursorStaticWhite 1.25s infinite normal;
+}
+
 @keyframes cursorStatic {
   0% { box-shadow: 0; }
   75% { box-shadow: 2px 0 0 0 black; }
   100% { box-shadow: 2px 0 0 0 black; }
 }
 
-@keyframes cursorStaticLight {
+@keyframes cursorStaticWhite {
   0% { box-shadow: 0; }
   75% { box-shadow: 2px 0 0 0 white; }
   100% { box-shadow: 2px 0 0 0 white; }
@@ -284,7 +292,12 @@ input:checked + .slider:before {
 }
 
 @keyframes cursor {
-  0% { border-right: 2px solid rgba(0, 0, 0, 1); }
+	  0% { border-right: 2px solid black }
+	  100% { border-right: none; }
+	}
+
+@keyframes cursorWhite {
+  0% { border-right: 2px solid white }
   100% { border-right: none; }
 }
 
@@ -297,17 +310,16 @@ input:checked + .slider:before {
 	  animation: typewriter 10s steps(14) 1s infinite normal, cursor 1.25s infinite normal;
 	}
 
+	.dark .typewriter {
+		animation: typewriter 10s steps(14) 1s infinite normal, cursorWhite 1.25s infinite normal;
+	}
+
 	@keyframes typewriter {
 	  0% { width: 0; }
 	  20% { width: 254.05px; }
 	  80% { width: 254.05px; }
 	  90% { width: 0; }
 	  100% { width: 0; }
-	}
-
-	@keyframes cursor {
-	  0% { border-right: 2px solid rgba(0, 0, 0, 1); }
-	  100% { border-right: none; }
 	}
 }
 

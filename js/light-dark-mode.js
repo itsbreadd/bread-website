@@ -1,23 +1,23 @@
 $(document).ready(function() {
-	let darkModeValue = localStorage.getItem("dark");
-
-	// Dark mode is active.
-	if (darkModeValue === '1') {
-		$('html').toggleClass("inversed");
-
-		$('.dark-mode-icon').toggleClass("fa-moon");
-		$('.dark-mode-icon').toggleClass("fa-sun");
+	if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+		localStorage.theme = 'dark';
+	    document.documentElement.classList.add('dark');
+	} else {
 		$('.switch input').prop('checked', true);
+	    document.documentElement.classList.remove('dark');
+	    $('.dark-mode-icon').removeClass("fa-moon");
+	    $('.dark-mode-icon').addClass("fa-sun");
 	}
 
 	$('.switch input').change(function() {
-		if (+window.localStorage.getItem("dark")) {
-			window.localStorage.setItem("dark", 0);
+		if (localStorage.theme === 'dark') {
+			localStorage.theme = 'light';
+			document.documentElement.classList.remove('dark');
 		} else {
-		    window.localStorage.setItem("dark", 1);
+		    localStorage.theme = 'dark';
+		    document.documentElement.classList.add('dark');
 		}
-		$('html').toggleClass("inversed");
-		$('.dark-mode-icon').toggleClass("fa-moon");
 		$('.dark-mode-icon').toggleClass("fa-sun");
+		$('.dark-mode-icon').toggleClass("fa-moon");
 	});
 });

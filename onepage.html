@@ -11,19 +11,19 @@
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
     </head>
 
-    <body class="text-black overscroll-none">
-        <a class="fixed bottom-0 right-0 mb-4 mr-4 back-to-top cursor-pointer fa-solid fa-circle-arrow-up" title="Back to Top" style="display: none"></a>
+    <body class="overscroll-none bg-stone-200 dark:bg-stone-800 text-black dark:text-white">
+        <a class="fixed bottom-0 right-0 mb-4 mr-4 back-to-top text-green-600 dark:text-white cursor-pointer fa-solid fa-circle-arrow-up hidden" title="Back to Top"></a>
         <div class="nav-control fixed flex justify-center p-5 z-20 top-0 right-0 hidden">
             <div class="flex h-full w-full">
                 <label class="menu-toggle flex flex-col cursor-pointer justify-center ml-auto mr-5 z-20" for="menu">
                   <input type="checkbox" id="menu"/> 
-                  <span class="bg-black pointer-events-none"></span>
-                  <span class="bg-black pointer-events-none"></span>
-                  <span class="bg-black pointer-events-none"></span>
+                  <span class="bg-black dark:bg-white pointer-events-none"></span>
+                  <span class="bg-black dark:bg-white pointer-events-none"></span>
+                  <span class="bg-black dark:bg-white pointer-events-none"></span>
                 </label>
             </div>
         </div>
-    	<header class="w-full flex justify-start sticky top-0 z-10 p-5">
+    	<header class="w-full flex justify-start sticky top-0 z-10 p-5 bg-zinc-300 dark:bg-zinc-900">
             <div>
         		<a href="/" title="Home">
                     <h1 class="text-3xl font-medium typewriter xs:hidden">Bradley</h1>
@@ -32,10 +32,10 @@
                 <a href="https://goo.gl/maps/ctUkXz5ERKhKRCUi9" target="_blank" title="Open Map"><i class="bounce fa-solid fa-location-dot mr-2"></i>Nottingham</a>
             </div>
     	</header>
-    	<div class="navigation-menu w-full h-full text-center fixed top-0 z-10" data-dropped="false">
+    	<div class="navigation-menu w-full h-full text-center fixed top-0 z-10 bg-zinc-300 dark:bg-zinc-900" data-dropped="false">
             <div class="flex w-full p-5">
                 <a href="/" title="home">
-                    <h1 class="text-3xl font-medium text-left static-typewriter">&lt;h1&gt;BA&lt;/h1&gt;</h1>
+                    <h1 class="nav-heading text-3xl font-medium text-left">&lt;h1&gt;BA&lt;/h1&gt;</h1>
                 </a>
             </div>
     		<ul>
@@ -93,7 +93,7 @@
     		</ul>
             <div class="copyright flex flex-wrap pb-2 text-xs w-full absolute bottom-0">
                 <div class="w-full switch-container mb-3">
-                    <i class="dark-mode-icon fa-solid fa-sun text-base mr-2"></i>
+                    <i class="dark-mode-icon fa-solid fa-moon text-base mr-2"></i>
                     <label class="switch absolute">
                         <input type="checkbox">
                         <span class="slider absolute inset-0"></span>
@@ -151,14 +151,14 @@
                     <p class="flex my-2 ml-5 bg-red-600 p-6 w-fit">PHP Fatal error: Allowed memory size of 536870912 bytes exhausted (tried to facilitate a chrome tab addiction) please see below for detailed explanation, aborting...</p>
                 </div>
             </section>
-            <section id="experience" class="w-full p-5 mb-5">
+            <section id="experience" class="w-full p-5 mb-5 bg-stone-100 dark:bg-stone-950">
                 <div class="section-container">
-                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h2 class="static-typewriter-light">&lt;h2&gt;Experience&lt;/h2&gt;</h2>
+                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1 bg-black dark:bg-white">
+                        <h2 class="text-white dark:text-black static-typewriter">&lt;h2&gt;Experience&lt;/h2&gt;</h2>
                     </div>
                     <div class="flex py-2">
                         <p class="date rotate-180 italic">2023-Now</p>
-                        <div class="w-full px-3 border-l-2 border-black">
+                        <div class="w-full px-3 border-l-2 border-black dark:border-white">
                             <h3>Paul Smith <small class="font-light">(Senior Web Developer)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP, Laravel 10, Vue3, ChatGPT, API's, GraphQl, Centra.</p>
                             <p>Lots of PHP. API focused, developing Laravel bridge between ERP and Centra to: import, map, store, and export data.</p>
@@ -166,7 +166,7 @@
                     </div>
                     <div class="flex py-2">
                         <p class="date rotate-180 italic">2022-2023</p>
-                        <div class="w-full px-3 border-l-2 border-black">
+                        <div class="w-full px-3 border-l-2 border-black dark:border-white">
                             <h3>Paul Smith <small class="font-light">(Web Developer)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP, Velocity, React (Vague), SQL, GTM, SGTM, Consent.</p>
                             <p>Mainly focused on third party integrations (Nosto, Klevu, Gpay, Apple Pay, UserCentrics) and custom Magento modules to handle crucial business processes.</p>
@@ -174,7 +174,7 @@
                     </div>
                     <div class="flex py-2">
                         <p class="date rotate-180 italic">2019-2022</p>
-                        <div class="w-full px-3 border-l-2 border-black">
+                        <div class="w-full px-3 border-l-2 border-black dark:border-white">
                             <h3>Paul Smith <small class="font-light">(Junior Web Devloper)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP, Magento 2, jQuery, Javascript, KnockoutJS.</p>
                             <p>Learning Magento concepts: Dependency Injection, Events, Observers... (Lots of fontend work).</p>
@@ -182,14 +182,14 @@
                     </div>
                 </div>
             </section>
-            <section id="education" class="w-full p-5 mb-5">
+            <section id="education" class="w-full p-5 mb-5 bg-stone-100 dark:bg-stone-950">
                 <div class="section-container">
-                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h2 class="static-typewriter-light-odd">&lt;h2&gt;Education&lt;/h2&gt;</h2>
+                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1 bg-black dark:bg-white">
+                        <h2 class="text-white dark:text-black static-typewriter-odd">&lt;h2&gt;Education&lt;/h2&gt;</h2>
                     </div>
                     <div class="flex py-2">
                         <p class="date rotate-180 italic">2018-2019</p>
-                        <div class="w-full px-3 border-l-2 border-black">
+                        <div class="w-full px-3 border-l-2 border-black dark:border-white">
                             <h3>Demontfort Universtity <small class="font-light">(Bachelor of Science, Computing (Hons) 1st)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP, Bootstrap, HTML5, CSS3, SCSS, LESS, SQL, jQuery</p>
                             <p>Developing responsive mobile first websites, incuding an introduction to DBSM and principles. Other modules included, IT in developing countries, Project Management, and more.</p>
@@ -197,7 +197,7 @@
                     </div>
                     <div class="flex py-2">
                         <p class="date rotate-180 italic">2016-2018</p>
-                        <div class="w-full px-3 border-l-2 border-black">
+                        <div class="w-full px-3 border-l-2 border-black dark:border-white">
                             <h3>New College Nottingham <small class="font-light">(Pearson Higher National HNC/D Computing)</small></h3>
                             <p><strong>Languages & Frameworks: </strong>PHP, Photoshop, HTML5, CSS3, C#</p>
                             <p>Mainly design oriented. Spent a lot of time in Photoshop and studying design concepts: wireframes, colour sampling & scheme building. Group application development in C# of hotel booking system.</p>
@@ -205,7 +205,7 @@
                     </div>
                     <div class="flex py-2">
                         <p class="date rotate-180 italic">2013-2016</p>
-                        <div class="w-full px-3 border-l-2 border-black">
+                        <div class="w-full px-3 border-l-2 border-black dark:border-white">
                             <h3>Confetti <small class="font-light">(Games Development)</small></h3>
                             <p><strong>Software: </strong>Rhino 3D, Unreal Engine 4, Photoshop, Maya</p>
                             <p>Two man team game development project (1 year) involving: planning, concept, design, creation, testing. Thoroughly documented throughout. Extensive Rhino3D: modelling/ texturing assets for video games. First introduction to "code" through UE4's blueprinting system.</p>
@@ -213,10 +213,10 @@
                     </div>
                 </div>
             </section>
-            <section id="current-role" class="w-full p-5 mb-5">
+            <section id="current-role" class="w-full p-5 mb-5 bg-stone-100 dark:bg-stone-950">
                 <div class="section-container">
-                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h2 class="static-typewriter-light">&lt;h2&gt;Current Role&lt;/h2&gt;</h2>
+                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1 bg-black dark:bg-white">
+                        <h2 class="text-white dark:text-black static-typewriter">&lt;h2&gt;Current Role&lt;/h2&gt;</h2>
                     </div>
                     <p>As previously mentioned due to the constantly evolving <span class="text-yellow-200 font-bold">ecommerce</span> sector i have been exposed to a variety of languages and frameworks; with our most recent project being a <span class="text-yellow-200 font-bold">headless</span> build. I have developed & maintained custom modules to create or improve upon business processes including communication through <span class="text-yellow-200 font-bold">ERP systems</span> through API's.</p>
                     <p>During my time at <span class="text-yellow-200 font-bold">Paul Smith</span>, i have a few aspects i am particularly proud of:</p>
@@ -245,10 +245,10 @@
                     </ul>
                 </div>
             </section>
-            <section id="language-skills" class="w-full p-5 mb-5">
+            <section id="language-skills" class="w-full p-5 mb-5 bg-stone-100 dark:bg-stone-950">
                 <div class="section-container">
-                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h2 class="static-typewriter-light-odd">&lt;h2&gt;Lanuages & Skills&lt;/h2&gt;</h2>
+                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1 bg-black dark:bg-white">
+                        <h2 class="text-white dark:text-black static-typewriter-odd">&lt;h2&gt;Lanuages & Skills&lt;/h2&gt;</h2>
                     </div>
                     <p class="mb-5">It all started with Magento & PHP. However i'm always eager to learn new languages to further my skills. Due to a recent headless implementation in my current role I have been advancing in Laravel 10 & Vue3.</p>
                     <div class="skills-container grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
@@ -266,10 +266,10 @@
                     </div>
                 </div>
             </section>
-            <section id="interests" class="w-full p-5 mb-5">
+            <section id="interests" class="w-full p-5 mb-5 bg-stone-100 dark:bg-stone-950">
                 <div class="section-container">
-                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h2 class="static-typewriter-light">&lt;h2&gt;Interests&lt;/h2&gt;</h2>
+                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1 bg-black dark:bg-white">
+                        <h2 class="text-white dark:text-black static-typewriter">&lt;h2&gt;Interests&lt;/h2&gt;</h2>
                     </div>
                     <ul>
                         <li><strong>Movies:</strong> Into the Wild, Alien, Prometheus, Your Name, The Martian...</li>
@@ -279,10 +279,10 @@
                     </ul>
                 </div>
             </section>
-            <section id="contact" class="w-full p-5">
+            <section id="contact" class="w-full p-5 bg-stone-100 dark:bg-stone-950">
                 <div class="section-container">
-                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1">
-                        <h2 class="static-typewriter-light-odd">&lt;h2&gt;Get in touch...&lt;/h2&gt;</h2>
+                    <div class="section-header-container w-full sm:w-1/2 mb-5 py-1 bg-black dark:bg-white">
+                        <h2 class="text-white dark:text-black static-typewriter-odd">&lt;h2&gt;Get in touch...&lt;/h2&gt;</h2>
                     </div>
                     <p class="mb-5">I am not currently looking for new roles. However, if you would like to contact me, you can use the form below. Or, If you'd prefer, you can contact me through one of my social links at the bottom of the page.</p>
                     <form class="contact-form form flex flex-wrap" action="mailto:bradarcher15@googlemail.com?subject=Brad Archer Website Query" method="post" enctype="text/plain">
@@ -311,7 +311,7 @@
             </section>
         </div>
 
-        <footer class="w-full">
+        <footer class="w-full bg-zinc-300 dark:bg-zinc-900">
             <div class="w-full">
                 <div class="social-links mx-auto flex w-full justify-between p-8">
                     <a href="https://www.facebook.com/bread.archer" target="_blank" class="fa-brands fa-facebook-f" title="Facebook"></a>

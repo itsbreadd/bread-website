@@ -1,11 +1,16 @@
 $(document).ready(function() {
 	let socialLinks = $('.social-links > a');
 
-	socialLinks.hover(function() {
-		let centerX = $(this).offset().left + $(this).width() / 2;
-		let title = this.title.toLowerCase();
+	socialLinks.hover(function(el) {
+		let centerX   = $(this).offset().left + $(this).width() / 2;
+		let title     = this.title.toLowerCase();
+		let classList = 'bg-black text-white dark:bg-white dark:text-black';
 
-		$(`<div class="tooltip ${title}" style="display: none;">` + this.title + '</div>')
+		if ($(el.target.parentElement).hasClass('index')) {
+			classList = 'bg-white text-black dark:bg-black dark:text-white';
+		}
+
+		$(`<div class="tooltip ${title} ${classList} opacity-90" style="display: none;">` + this.title + '</div>')
 			.insertBefore(this).css({"left": centerX - 40}).fadeIn(200);
 	},
 	

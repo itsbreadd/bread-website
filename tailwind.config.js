@@ -1,5 +1,9 @@
 module.exports = {
-  content: ["./*.{html,js}",],
+  content: [
+    './index.html',
+    './onepage.html',
+    "./js/*.js"
+  ],
   darkMode: 'class',
   theme: {
     extend: {

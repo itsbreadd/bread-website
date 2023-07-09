@@ -19,7 +19,6 @@ $(document).ready(function() {
 		return elementBottom > viewportTop && elementTop < viewportBottom;
 	}
 
-	handleBackToTop();
 	renderSections();
 
 	function renderSections() {
@@ -40,6 +39,14 @@ $(document).ready(function() {
 			backToTopBtn.fadeOut(200);
 		}
 	}
+
+	backToTopBtn.mouseenter(function () {
+		backToTopBtn.animate({opacity: 0.6}, 300);
+	});
+
+	backToTopBtn.mouseleave(function () {
+		backToTopBtn.animate({opacity: 1}, 300);
+	});
 
 	$(window).on('resize scroll', function() {
 		handleBackToTop();

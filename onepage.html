@@ -11,8 +11,8 @@
         <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
     </head>
 
-    <body class="overscroll-none bg-stone-200 dark:bg-stone-800 text-black dark:text-white">
-        <a class="fixed bottom-0 right-0 mb-4 mr-4 back-to-top text-green-600 dark:text-white cursor-pointer fa-solid fa-circle-arrow-up hidden" title="Back to Top"></a>
+    <body class="overscroll-none dark:bg-zinc-300 bg-zinc-900 text-black dark:text-white">
+        <a class="fixed bottom-0 right-0 mb-4 mr-4 back-to-top text-green-600 dark:text-white cursor-pointer fa-solid fa-circle-arrow-up" style="display: none" title="Back to Top"></a>
         <div class="nav-control fixed flex justify-center p-5 z-20 top-0 right-0 hidden">
             <div class="flex h-full w-full">
                 <label class="menu-toggle flex flex-col cursor-pointer justify-center ml-auto mr-5 z-20" for="menu">
@@ -109,7 +109,7 @@
     	</div>
 
         <div class="content p-5 mx-auto">
-            <section id="introduction" class="terminal relative bg-black shadow rounded-md text-white mb-5">
+            <section id="introduction" class="terminal relative bg-stone-100 dark:bg-black dark:bg-black shadow rounded-xl mb-5">
                 <div class="action-bar px-2 relative rounded-t-md">
                     <div class="btns absolute flex items-center h-full">
                         <span class="action-btn flex justify-center items-center bg-close border-close-dark rounded-full border mr-2">
@@ -118,8 +118,8 @@
                         <span class="action-btn block bg-minimize border-minimize-dark rounded-full border mr-2"></span>
                         <span class="action-btn block bg-maximize border-maximize-dark rounded-full border"></span>
                     </div>
-                    <div class="text-center md:hidden">..bread-website</div>
-                    <div class="text-center hidden md:block">~/Projects/bread-website/</div>
+                    <div class="text-center text-white md:hidden">..bread-website</div>
+                    <div class="text-center text-white hidden md:block">~/Projects/bread-website/</div>
                 </div>
                 <div class="text-left p-5">
                     <p>> php artisan run:mediocre:introduction</p>
@@ -127,7 +127,7 @@
                     <p>> php artisan run:introduction</p>
                     <p class="ml-5 text-green-600">Executing Introduction...</p>
                     <p class="ml-5">-- bio --</p>
-                    <p class="ml-5">alias: bread <span class="text-yellow-200">(yum)</span>.</p>
+                    <p class="ml-5">alias: bread <span class="text-yellow-400">(yum)</span>.</p>
                     <p class="ml-5">name: bradley archer.</p>
                     <p class="ml-5">dob: aug 1998.</p>
                     <p class="ml-5">role: web developer.</p>
@@ -138,12 +138,12 @@
                     <p class="ml-5">-- preferences --</p>
                     <p class="ml-5">languages: php (8.1), vue3, sql, graphql.</p>
                     <p class="ml-5">frameworks: magento 2 (2.4.3), laravel 10, tailwind.</p>
-                    <p class="ml-5">code editor: php storm <span class="text-yellow-200">(forever)</span>.</p>
+                    <p class="ml-5">code editor: php storm <span class="text-yellow-400">(forever)</span>.</p>
                     <br>
                     <p class="ml-5 text-green-600">Executing Experience Overview...</p>
                     <p class="ml-5">-- experience --</p>
-                    <p class="ml-5">> history working with a variety of languages & frameworks to develop & maintain web based <span class="text-yellow-200">ecommerce</span> stores.</p>
-                    <p class="ml-5">> years of experience in <span class="text-yellow-200">Magento 2</span>. from plugins, to events. writing my own <span class="text-yellow-200">custom modules/ components</span>. creating and managing <span class="text-yellow-200">crons</span>. mainly going out of my way to <span class="text-yellow-200">automate</span> manual business processes.</p>
+                    <p class="ml-5">> history working with a variety of languages & frameworks to develop & maintain web based <span class="text-yellow-400">ecommerce</span> stores.</p>
+                    <p class="ml-5">> years of experience in <span class="text-yellow-400">Magento 2</span>. from plugins, to events. writing my own <span class="text-yellow-400">custom modules/ components</span>. creating and managing <span class="text-yellow-400">crons</span>. mainly going out of my way to <span class="text-yellow-400">automate</span> manual business processes.</p>
                     <br>
                     <p class="ml-5 text-green-600">Executing Weaknesses Overview...</p>
                     <p class="ml-5">-- weaknesses --</p>
@@ -218,26 +218,26 @@
                     <div class="section-header-container w-full sm:w-1/2 mb-5 py-1 bg-black dark:bg-white">
                         <h2 class="text-white dark:text-black static-typewriter">&lt;h2&gt;Current Role&lt;/h2&gt;</h2>
                     </div>
-                    <p>As previously mentioned due to the constantly evolving <span class="text-yellow-200 font-bold">ecommerce</span> sector i have been exposed to a variety of languages and frameworks; with our most recent project being a <span class="text-yellow-200 font-bold">headless</span> build. I have developed & maintained custom modules to create or improve upon business processes including communication through <span class="text-yellow-200 font-bold">ERP systems</span> through API's.</p>
-                    <p>During my time at <span class="text-yellow-200 font-bold">Paul Smith</span>, i have a few aspects i am particularly proud of:</p>
+                    <p>As previously mentioned due to the constantly evolving <span class="text-yellow-400 font-bold">ecommerce</span> sector i have been exposed to a variety of languages and frameworks; with our most recent project being a <span class="text-yellow-400 font-bold">headless</span> build. I have developed & maintained custom modules to create or improve upon business processes including communication through <span class="text-yellow-400 font-bold">ERP systems</span> through API's.</p>
+                    <p>During my time at <span class="text-yellow-400 font-bold">Paul Smith</span>, i have a few aspects i am particularly proud of:</p>
                     <ul>
                         <li class="pt-6 pb-3">
-                            <p>> Building & maintaining <span class="text-yellow-200 font-bold">Magento 2</span> modules to ensure business process continue to run smoothly & more efficiently</p>
+                            <p>> Building & maintaining <span class="text-yellow-400 font-bold">Magento 2</span> modules to ensure business process continue to run smoothly & more efficiently</p>
                         </li>
                         <li class="py-3">
                             <p>> Providing technical support through both phone & email to a variety of departments.</p>
                         </li>
                         <li class="py-3">
-                            <p>> Sole management of web aspects contained within our separate <span class="text-yellow-200 font-bold">business to business</span> website (involved the importing & maintaining of: <span class="text-yellow-200 font-bold">products, prices, stock, etc...</span>). Including maintainence the services that import them. At one point this also involved the uploading of imagery through <span class="text-yellow-200 font-bold">Cloudinary</span> which was later automated.</p>
+                            <p>> Sole management of web aspects contained within our separate <span class="text-yellow-400 font-bold">business to business</span> website (involved the importing & maintaining of: <span class="text-yellow-400 font-bold">products, prices, stock, etc...</span>). Including maintainence the services that import them. At one point this also involved the uploading of imagery through <span class="text-yellow-400 font-bold">Cloudinary</span> which was later automated.</p>
                         </li>
                         <li class="py-3">
-                            <p>> Despite little knowledge of <span class="text-yellow-200 font-bold">Vue</span>, i jumped into our new <span class="text-yellow-200 font-bold">headless</span> build & respectively rebuilt/ improved upon specific areas, recently rewriting our <span class="text-yellow-200 font-bold">wishlist</span> functionality using <span class="text-yellow-200 font-bold">Axios, GraphQl, & Laravel</span> to communicate with Magento.</p>
+                            <p>> Despite little knowledge of <span class="text-yellow-400 font-bold">Vue</span>, i jumped into our new <span class="text-yellow-400 font-bold">headless</span> build & respectively rebuilt/ improved upon specific areas, recently rewriting our <span class="text-yellow-400 font-bold">wishlist</span> functionality using <span class="text-yellow-400 font-bold">Axios, GraphQl, & Laravel</span> to communicate with Magento.</p>
                         </li>
                         <li class="py-3">
-                            <p>> Independent implementation of many third party services, including: <span class="text-yellow-200 font-bold">Nosto</span> (Product Recommendations, Category Merchandising, template building using <span class="text-yellow-200 font-bold">Velocity</span>), <span class="text-yellow-200 font-bold">Klevu</span> (Search), <span class="text-yellow-200 font-bold">Apple Pay</span> (through <span class="text-yellow-200 font-bold">Adyen</span>). Also including <span class="text-yellow-200 font-bold">analytics</span>, typically handled in <span class="text-yellow-200 font-bold">GTM (Google Tag Manager)</span> including: <span class="text-yellow-200 font-bold">Facebook Pixel, Rakuten, Nosto Tracking.</span></p>
+                            <p>> Independent implementation of many third party services, including: <span class="text-yellow-400 font-bold">Nosto</span> (Product Recommendations, Category Merchandising, template building using <span class="text-yellow-400 font-bold">Velocity</span>), <span class="text-yellow-400 font-bold">Klevu</span> (Search), <span class="text-yellow-400 font-bold">Apple Pay</span> (through <span class="text-yellow-400 font-bold">Adyen</span>). Also including <span class="text-yellow-400 font-bold">analytics</span>, typically handled in <span class="text-yellow-400 font-bold">GTM (Google Tag Manager)</span> including: <span class="text-yellow-400 font-bold">Facebook Pixel, Rakuten, Nosto Tracking.</span></p>
                         </li>
                         <li class="py-3">
-                            <p>> I developed a system for <span class="text-yellow-200 font-bold">generating barcodes</span> using <span class="text-yellow-200 font-bold">Zend Barcode</span> and placing them on returns forms, allowing the <span class="text-yellow-200 font-bold">warehouse</span> to process returns at a faster rate.</p>
+                            <p>> I developed a system for <span class="text-yellow-400 font-bold">generating barcodes</span> using <span class="text-yellow-400 font-bold">Zend Barcode</span> and placing them on returns forms, allowing the <span class="text-yellow-400 font-bold">warehouse</span> to process returns at a faster rate.</p>
                         </li>
                         <li class="py-3">
                             I pride myself on writing readable and maintainable code, making sure whenever i edit a file that it is up to PSR4 standards.

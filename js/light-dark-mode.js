@@ -8,6 +8,8 @@ $(document).ready(function() {
 	    if (typeof particlesJS != 'undefined') {
 			particlesJS("particle-overlay", particlesDark);
 		}
+		$('.dark-mode-icon').removeClass("fa-sun");
+	    $('.dark-mode-icon').addClass("fa-moon");
 	} else {
 	    document.documentElement.classList.remove('dark');
 	    if (typeof particlesJS != 'undefined') {

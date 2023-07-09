@@ -8,13 +8,13 @@
       }
     },
     "color": {
-      "value": "#FFFFFF"
+      "value": "#000000"
     },
     "shape": {
       "type": "polygon",
       "stroke": {
         "width": 0,
-        "color": "#FFFFFF"
+        "color": "#000000"
       },
       "polygon": {
         "nb_sides": 5
@@ -48,7 +48,7 @@
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#FFFFFF",
+      "color": "#000000",
       "opacity": 0.9,
       "width": 1
     },

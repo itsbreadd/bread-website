@@ -8,7 +8,6 @@ Compiled with postcss using Tailwind and AutoPrefixer
 
 # bugs
 - Stop header show hide events stacking
-- Fix back to top fade in
 
 # notes
 - Commented code in onepage.less is animation for desktop nav

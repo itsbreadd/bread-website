@@ -354,9 +354,7 @@ input:checked + .slider:before {
 }
 
 .skills {
-	background-color: black;
 	padding: 0.3rem;
-	color: white;
 	display: inline-block;
 	text-align: center;
 	cursor: pointer;

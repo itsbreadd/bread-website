@@ -49,6 +49,7 @@ h4 {
 .back-to-top {
 	z-index: 10;
 	font-size: 2rem;
+	mix-blend-mode: difference;
 }
 
 .menu-toggle {

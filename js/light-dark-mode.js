@@ -1,5 +1,5 @@
-import particles from '../particles.json' assert { type: 'json' };
-import particlesDark from '../particles-dark.json' assert { type: 'json' };
+import particles from '../particles.json' with { type: "json" };
+import particlesDark from '../particles-dark.json' with { type: "json" };
 $(document).ready(function() {
 	if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
 		localStorage.theme = 'dark';

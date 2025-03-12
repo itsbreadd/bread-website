@@ -4,18 +4,23 @@ Personal CV Website
 Compiled with postcss using Tailwind and AutoPrefixer
 
 # to do
-- Add sections/ information to onepage (in progress)
+- 
 
 # bugs
 -
 
 # notes
-- Commented code in onepage.less is animation for desktop nav
+- commented code in onepage.less is animation for desktop nav
 
 # local dev
 - npm install (to install dependencies)
-- npm run build-css to compile tailwind css
-- Add --watch flag to build scripts
+- scripts:
+	- build-start-css
+	- build-start-css-watch
+	- build-start-css-production
+	- build-onepage-css
+	- build-onepage-css-production
+	- build-onepage-css-watch
 
 # theme info
 - darkest: bg-zinc-300 dark:bg-zinc-900

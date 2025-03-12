@@ -394,3 +394,7 @@ input:checked + .slider:before {
 .current-role .section-container li:nth-child(odd) i {
 	color: blue;
 }
+
+.dark .google {
+	filter: invert(1);
+}

@@ -4,7 +4,7 @@ Personal CV Website
 Compiled with postcss using Tailwind and AutoPrefixer
 
 # to do
-- 
+- update colour scheme
 
 # bugs
 -
